@@ -1,17 +1,14 @@
-"use client";
+ "use client";
 import { useState } from "react";
 
 import { IoMdSearch } from "react-icons/io";
 
-export default function MainHome() {
-      const [activeTab, setActiveTab] = useState("findTalent");
+export default function HomeContainer() {
+    const [activeTab, setActiveTab] = useState("findTalent");
 
+ return(
 
-  return (
-    <>
-    <div className="bg-white">
-        
-      <div
+ <div
       className="relative w-full h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/ApartmentCoder.jpg')" }}
     >
@@ -95,8 +92,5 @@ export default function MainHome() {
         </div>
       </div>
     </div>
-
-    </div>
-    </>
-  )
+ );
 }
