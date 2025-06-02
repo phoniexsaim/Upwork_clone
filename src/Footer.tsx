@@ -7,7 +7,7 @@ export default function Footer() {
       <footer className="bg-[#1a1a1a] text-white mx-[24px] mb-[24px] py-[64px] px-[80px] rounded-[8px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
-            <h4 className="text-sm text-[#A5A5A5] mb-3">For Clients</h4>
+            <h4 className="text-sm text-[#A5A5A5] mb-3">For Youtubers</h4>
             <ul className="space-y-1 text-sm">
               <li className="hover:underline"><a href="#">How to hire</a></li>
               <li className="hover:underline"><a href="#">Talent Marketplace</a></li>
@@ -27,10 +27,10 @@ export default function Footer() {
             <ul className="space-y-1 text-sm">
               <li className="hover:underline"><a href="#">How to find work</a></li>
               <li className="hover:underline"><a href="#">Direct Contracts</a></li>
-              <li className="hover:underline"><a href="#">Find freelance jobs worldwide</a></li>
-              <li className="hover:underline"><a href="#">Find freelance jobs in the USA</a></li>
+              <li className="hover:underline"><a href="#">Find business worldwide</a></li>
+              <li className="hover:underline"><a href="#">Find business in the USA</a></li>
               <li className="hover:underline"><a href="#">Win work with ads</a></li>
-              <li className="hover:underline"><a href="#">Exclusive resources with Freelancer Plus</a></li>
+              <li className="hover:underline"><a href="#">Exclusive resources with business Plus</a></li>
             </ul>
           </div>
           <div>
