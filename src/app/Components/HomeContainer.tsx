@@ -110,7 +110,7 @@ export default function HomeContainer() {
     <p className="text-white mb-4 text-lg">
       Build your freelancing career on Upwork, with thousands of jobs posted every week.
     </p>
-    <button className="bg-[#108a00] cursor-pointer text-white px-6 py-2 rounded font-semibold">
+    <button className="bg-[#108a00] cursor-pointer text-white px-6 py-2 rounded-lg font-[500]">
       Explore recently posted jobs
     </button>
   </div>
