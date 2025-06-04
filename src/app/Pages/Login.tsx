@@ -27,14 +27,14 @@ export default function LoginPage() {
       >
         <main className="flex flex-1 items-center justify-center">
           <div className="border border-gray-200 rounded-[8px] shadow-sm p-10 w-[510px] h-[637px] flex flex-col items-center gap-4">
-            <h1 className="text-[28px] font-medium text-center mb-2">Log in to Upwork</h1>
+            <h1 className="text-[28px] font-medium text-center mb-2 text-black">Log in to Upwork</h1>
 
             <div className="relative w-[350px] ">
               <LuUserRound className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black text-lg" />
               <input
                 type="text"
                 placeholder="Username or Email"
-                className="w-[350px] pl-12 mx-auto py-2 border rounded-[8px] focus:outline-none focus:ring-1 focus:ring-black"
+                className="w-[350px] pl-12 mx-auto py-2 border rounded-[8px] text-gray-900 focus:outline-none focus:ring-1 focus:ring-black"
               />
             </div>
 
