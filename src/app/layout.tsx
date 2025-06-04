@@ -1,11 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import MainHome from "./Pages/Home";
-import Navbar from "./Components/Navbar";
-import Login from "./Pages/Login";
-import SigIn from "./Pages/signIn";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
