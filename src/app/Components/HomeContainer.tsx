@@ -7,7 +7,7 @@ export default function HomeContainer() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   return (
-    <div className="mx-34 rounded-2xl overflow-hidden shadow-lg">
+    <div className="mx-34 font-sans rounded-2xl overflow-hidden shadow-lg">
       <div
         className="relative w-full h-[600px] bg-cover bg-center"
         style={{ backgroundImage: "url('/ApartmentCoder.jpg')" }}
@@ -16,7 +16,7 @@ export default function HomeContainer() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-col">
           <div className="md:w-1/2 text-white mb-10">
-            <h1 className="text-[50px] font-[600] text-base/14 max-w-3xl">
+            <h1 className="text-[55px] font-[600] text-base/14 max-w-3xl">
               Connecting clients in need to freelancers who deliver
             </h1>
           </div>
@@ -56,7 +56,7 @@ export default function HomeContainer() {
     onFocus={() => setIsPopupOpen(true)}
     onBlur={() => setTimeout(() => setIsPopupOpen(false), 150)} 
   />
-  <button className="bg-black text-white px-4 py-[6px] rounded-full flex items-center justify-center">
+  <button className="bg-black text-white text-[20px] px-4 py-[6px] rounded-full flex items-center justify-center">
     <span className="text-[#d2ff00] font-bold text-[28px]">
       <IoMdSearch />
     </span>

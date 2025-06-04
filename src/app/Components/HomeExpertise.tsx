@@ -10,7 +10,7 @@ export default function HomeExpertise() {
 
  
  <div className="min-h-screen bg-white font-sans text-gray-900">
-  <div className="max-w-7xl mx-auto px-6 py-16">
+  <div className="max-w-7xl font-sans mx-auto px-6 py-16">
     <section className="grid md:grid-cols-2 gap-0 items-center overflow-hidden">
       <div className="bg-[#13544e] text-white p-10 h-full flex flex-col justify-center rounded-l-lg">
         <h3 className="text-white text-sm font-[600] text-[24px] mb-6">Enterprise Suite</h3>

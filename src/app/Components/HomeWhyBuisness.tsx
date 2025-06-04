@@ -11,9 +11,8 @@ export default function HomeWhyBuisness() {
     return(
         <>
      <section className="bg-white py-16">
-  <div className="max-w-7xl mx-auto px-6 relative flex flex-col lg:flex-row gap-6">
+  <div className="max-w-7xl font-sans mx-auto px-6 relative flex flex-col lg:flex-row gap-6">
     
-    {/* Left Card - 70% */}
     <div className="w-full lg:w-[70%] bg-gray-50 p-10 rounded-lg z-10 relative">
       <h2 className="text-[64px] font-[500] mb-8 text-black text-base/16 max-w-[500px]">
         Why businesses turn to Upwork

@@ -59,7 +59,7 @@ export default function TestimonialSlider() {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="relative max-w-7xl mx-auto px-4 md:px-6 py-16 mt-10 overflow-hidden">
+    <div className="relative font-sans max-w-7xl mx-auto px-4 md:px-6 py-16 mt-10 overflow-hidden">
       <h2 className="text-4xl font-bold mb-10">
         Trusted by leading brands and startups
       </h2>

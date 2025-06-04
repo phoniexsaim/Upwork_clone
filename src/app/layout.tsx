@@ -5,6 +5,8 @@ import "./globals.css";
 // import Login from "@/Login";
 import Footer from "@/Footer";
 import MainHome from "./Pages/Home";
+import WhatsNewReleaseNotes from "./Pages/What's_New-Release_Notes";
+import WhatsNewResearch from "./Pages/What's_New-Resarch";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -32,6 +34,8 @@ export default function RootLayout({
       >
         {children}
             <MainHome></MainHome>
+            {/* <WhatsNewReleaseNotes/> */}
+            {/* <WhatsNewResearch></WhatsNewResearch> */}
       </body>
     </html>
   );

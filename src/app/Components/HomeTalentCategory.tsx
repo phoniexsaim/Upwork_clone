@@ -16,7 +16,7 @@ export default function HomeTalentCategory() {
 ];
     return(
         <>
-        <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="max-w-7xl font-sans mx-auto px-6 py-16">
       <h2 className="text-[40px] font-[500] text-gray-900 mb-2">
         Browse talent by category
       </h2>

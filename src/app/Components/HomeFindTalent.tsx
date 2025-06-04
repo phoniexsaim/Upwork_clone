@@ -5,7 +5,7 @@ export default function HomeFindTalent() {
 
   return (
     <>
-  <div className="max-w-7xl mx-auto px-6 py-16">
+  <div className="max-w-7xl font-sans mx-auto px-6 py-16">
   <section className="relative w-full rounded-lg overflow-hidden">
     <img
       src="/find-talent.jpg"

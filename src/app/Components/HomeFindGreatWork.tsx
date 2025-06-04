@@ -7,7 +7,7 @@ export default function MainHome() {
     return(
         <>
  <div className="min-h-screen bg-white">
-  <main className="max-w-7xl mx-auto px-6 py-16">
+  <main className="max-w-7xl font-sans mx-auto px-6 py-16">
     <div className="flex flex-col lg:flex-row items-stretch gap-0">
       
       <div className="w-full lg:w-1/2 rounded-l-lg overflow-hidden">

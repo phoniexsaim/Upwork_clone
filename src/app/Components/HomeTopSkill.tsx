@@ -5,7 +5,7 @@ export default function HomeTopSkill() {
   return (
     <>
        <div className="min-h-screen bg-white">
-        <main className="max-w-7xl mx-auto px-6 py-16">
+        <main className="max-w-7xl font-sans mx-auto px-6 py-16">
             <div className="flex justify-between">
                 <div className="cursor-pointer">
                     <h1 className="text-[40px] text-[#108a00]">Top skills</h1>
