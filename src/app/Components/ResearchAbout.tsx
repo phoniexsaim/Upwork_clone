@@ -10,7 +10,7 @@ export default function ResearchAbout() {
                 <button className="text-white w-[40%] cursor-pointer mt-5 font-[500] bg-[#108a00] rounded-lg py-[8px] hover:bg-[#14a800] px-[21px]">Listen to the prodcast</button>
             </div>
             <div className="w-[50%]">
-                <img className="aspect-[2.64]" src="/Work.png"/>
+                <img className="aspect-[2.64]" src="Images/Work.png"/>
             </div>
         </div>
         <div className="mt-6">

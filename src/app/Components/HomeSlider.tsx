@@ -7,7 +7,7 @@ import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 const testimonials = [
   {
     type: 'testimonial',
-    companyImage: '/perfectserve.svg',
+    companyImage: 'Images/perfectserve.svg',
     quote:
       "If we didn't have Upwork… the quality of talent wouldn't be as easy to measure, and we wouldn't have the incredible support we get from the Upwork team.",
     author: 'Jessica Khawaja, VP of People Operations',
@@ -25,7 +25,7 @@ const testimonials = [
   },
   {
     type: 'testimonial',
-    companyImage: '/microsoft-lg-light.svg',
+    companyImage: 'Images/microsoft-lg-light.svg',
     quote:
       'One of the advantages of utilizing freelancers is finding talent with different skills quickly as our needs change.',
     author: 'Carol Taylor, Director of Content Experience',
@@ -45,11 +45,11 @@ const testimonials = [
     type: 'logoCard',
     leftImage: '/company-logos-cover.jpg',
     logos: [
-      '/logo-airbnb.svg',
-      '/automattic-light.svg',
-      '/cloudflare.svg',
-      '/glassdoor.svg',
-      '/bissell-light.svg',
+      'Images/logo-airbnb.svg',
+      'Images/automattic-light.svg',
+      'Images/cloudflare.svg',
+      'Images/glassdoor.svg',
+      'Images/bissell-light.svg',
     ],
     heading: 'And many more',
   },

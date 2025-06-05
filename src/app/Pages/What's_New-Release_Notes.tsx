@@ -1,14 +1,14 @@
 "use client";
 
-import Footer from "@/Footer";
 import FilterSelect from "../Components/FilterSelect";
+import Footer from "../Components/Footer";
 import ProductReleaseTimeline from "../Components/ProductReleaseTimeline";
 
 
 export default function WhatsNewReleaseNotes() {
   return (
     <>
-      <div className="max-w-7xl font-sans mx-auto px-6 py-16">
+<div className="max-w-screen-2xl font-sans mx-auto px-6 py-16">
         <div className="bg-white mt-8">
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-black text-[72px] font-[500]">Release notes</h1>

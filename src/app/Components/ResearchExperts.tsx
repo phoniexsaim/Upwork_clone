@@ -19,7 +19,7 @@ export default function ResearchExperts() {
                         </div>
                         
                         <div className="w-[40%]">
-                            <img className="aspect-[1.74] object-cover rounded-lg" src="/Ex1.webp" />
+                            <img className="aspect-[1.74] object-cover rounded-lg" src="Images/Ex1.webp" />
                         </div>
 
                     </div>
@@ -33,7 +33,7 @@ export default function ResearchExperts() {
                         </div>
                         
                         <div className="w-[40%]">
-                            <img className="aspect-[1.74] object-cover rounded-lg" src="/Ex2.webp" />
+                            <img className="aspect-[1.74] object-cover rounded-lg" src="Images/Ex2.webp" />
                         </div>
 
                     </div>
@@ -47,7 +47,7 @@ export default function ResearchExperts() {
                         </div>
                         
                         <div className="w-[40%]">
-                            <img className="aspect-[1.74] object-cover rounded-lg" src="/Ex3.webp" />
+                            <img className="aspect-[1.74] object-cover rounded-lg" src="Images/Ex3.webp" />
                         </div>
 
                     </div>
@@ -66,7 +66,7 @@ export default function ResearchExperts() {
 
                     <div className="border border-[#e9e9e9] rounded-lg py-8 px-4">
                         <div>
-                            <img className="object-contain object-left w-full h-[12.25rem] mb-8"  src="/LO1.jpeg" alt="" />
+                            <img className="object-contain object-left w-full h-[12.25rem] mb-8"  src="Images/LO1.jpeg" alt="" />
                         </div>
                         <div>
                             <p className="uppercase text-[12px] text-black leading-[1.2em] tracking-[0.075rem] mb-2">MAY 8, 2025</p>
@@ -75,7 +75,7 @@ export default function ResearchExperts() {
                     </div>
                      <div className="border border-[#e9e9e9] rounded-lg py-8 px-4">
                         <div>
-                            <img className="object-contain object-left w-full h-[12.25rem] mb-8"  src="/LO2.png" alt="" />
+                            <img className="object-contain object-left w-full h-[12.25rem] mb-8"  src="Images/LO2.png" alt="" />
                         </div>
                         <div>
                             <p className="uppercase text-[12px] text-black leading-[1.2em] tracking-[0.075rem] mb-2">March 18, 2025</p>
@@ -84,7 +84,7 @@ export default function ResearchExperts() {
                     </div>
                      <div className="border border-[#e9e9e9] rounded-lg py-8 px-4">
                         <div>
-                            <img className="object-contain object-left w-full h-[12.25rem] mb-8"  src="/LO3.png" alt="" />
+                            <img className="object-contain object-left w-full h-[12.25rem] mb-8"  src="Images/LO3.png" alt="" />
                         </div>
                         <div>
                             <p className="uppercase text-[12px] text-black leading-[1.2em] tracking-[0.075rem] mb-2">January 22, 2025</p>
