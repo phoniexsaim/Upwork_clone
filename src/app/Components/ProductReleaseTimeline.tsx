@@ -68,7 +68,7 @@ export default function ProductReleaseTimeline() {
   };
 
   return (
-    <div className="flex px-4 py-12">
+    <div className="flex px-0 py-12">
       <div className="w-full font-sans max-w-6xl relative">
         {/* Vertical line */}
         <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-300 transform -translate-x-1/2"></div>

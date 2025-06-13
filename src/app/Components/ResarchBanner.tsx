@@ -6,7 +6,7 @@ export default function ResearchBanner() {
       <div className="max-w-7xl font-sans mx-auto px-6 py-16">
         <div
           className="relative bg-cover bg-center h-[400px] rounded-xl overflow-hidden"
-          style={{ backgroundImage: "url('/ApartmentCoder.jpg')" }}
+          style={{ backgroundImage: "url('Images/ApartmentCoder.jpg')" }}
         >
           <div className="absolute inset-0 bg-black/40" />
 

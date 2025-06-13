@@ -12,7 +12,7 @@ export default function ResearchSecondBanner() {
     <div className="w-[50%]">
       <img
         className="rounded-lg aspect-3/2 object-cover h-full w-full"
-        src="/6808033ad36887b84250132a_Blog_Header Image_1500x600.png"
+        src="Images/6808033ad36887b84250132a_Blog_Header Image_1500x600.png"
         alt="Research Image"
       />
     </div>

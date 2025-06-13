@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from "@/Footer";
+
 import HomeContainer from "../Components/HomeContainer";
 import HomeTalentCategory from "../Components/HomeTalentCategory";
 import HomeUpYourWork from "../Components/HomeUpYourWork";
@@ -10,6 +10,7 @@ import HomeFindGreatWork from "../Components/HomeFindGreatWork";
 import HomeTopSkill from "../Components/HomeTopSkill";
 import HomeWhyBuisness from "../Components/HomeWhyBuisness";
 import HomeSlider from "../Components/HomeSlider";
+import Footer from "../Components/Footer";
 
 export default function MainHome() {
 
