@@ -42,17 +42,6 @@ export default function EnterpriseTopBanner() {
     </div>
   </div>
 
-  {/* TRUSTED BY SECTION */}
-  <div className="flex flex-wrap justify-center gap-2 md:gap-1 mt-14 items-center text-[12px] md:text-base text-center">
-    <p className="w-full md:w-auto">TRUSTED BY</p>
-    <img src="/Images/small1.png" alt="image" className="aspect-[3.607] object-contain flex-none h-8 md:h-12" />
-    <img src="/Images/small2.png" alt="image" className="aspect-[3.607] object-contain flex-none h-8 md:h-12" />
-    <img src="/Images/small3.png" alt="image" className="aspect-[3.607] object-contain flex-none h-8 md:h-12" />
-    <img src="/Images/small4.svg" alt="image" className="aspect-[3.607] object-contain flex-none h-8 md:h-12" />
-    <img src="/Images/small5.png" alt="image" className="aspect-[3.607] object-contain flex-none h-8 md:h-12" />
-    <img src="/Images/small6.png" alt="image" className="aspect-[3.607] object-contain flex-none h-8 md:h-12" />
-    <p className="w-full md:w-auto">AND MORE</p>
-  </div>
 </div>
 
 
