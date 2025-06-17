@@ -1,11 +1,27 @@
+
 "use client"
 import Link from 'next/link';
 import { FaApple, FaUser } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import Head from 'next/head';
 import { LuUserRound } from 'react-icons/lu';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
-export default function LoginPage() {
+
+export default function Login() {
+  const [isScrolled, setIsScrolled] = useState(false)
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+
   return (
     <>
       <Head>
@@ -17,9 +33,16 @@ export default function LoginPage() {
           `}
         </style>
       </Head>
+      <div
+      className={`w-full p-[16px] fixed bg-white z-10 transition-all ${
+        isScrolled ? 'border-b border-b-[#d9d9d9]' : ''
+      }`}
+    >
+      <Image src="/images.png" alt="Upwork Logo" width={80} height={20} />
+    </div>
 
       <div
-        className="mt-[5rem] flex flex-col items-center justify-between bg-white"
+        className="pt-[5rem] flex flex-col items-center justify-between bg-white"
         style={{
           fontFamily:
             'var(--font-family-base), "neue-montreal-fallback", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
@@ -64,7 +87,7 @@ export default function LoginPage() {
               <hr className="w-10 border-gray-300" />
             </div>
 
-            <Link href="/signIn">
+            <Link href="/signup">
               <button className="border border-green-600 text-green-600 py-2 rounded-[10px] hover:bg-green-50 w-[200px] mx-auto cursor-pointer">
                 Sign Up
               </button>

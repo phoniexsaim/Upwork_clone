@@ -11,6 +11,7 @@ import HomeTopSkill from "../Components/HomeTopSkill";
 import HomeWhyBuisness from "../Components/HomeWhyBuisness";
 import HomeSlider from "../Components/HomeSlider";
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 export default function MainHome() {
 
@@ -18,7 +19,10 @@ export default function MainHome() {
   return (
     <>
     <div className="bg-white">
+      <Navbar/>
+        <div className="pt-[5rem]">
         <HomeContainer></HomeContainer>
+        </div>
         <HomeUpYourWork></HomeUpYourWork>
         <HomeTalentCategory></HomeTalentCategory>
         <HomeExpertise></HomeExpertise>
