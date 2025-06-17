@@ -7,6 +7,8 @@ import WhatsNewBlog from "./Pages/What's_New-Blog";
 import WhatsNewResearch from "./Pages/What's_New-Resarch";
 import WhatsNewReleaseNotes from "./Pages/What's_New-Release_Notes";
 import Enterprise from "./Pages/Enterprise";
+import EnterpriseServices from "./Pages/EnterpriseServices";
+import EnterpriseFeatures from "./Pages/EnterpriseFeatures";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -36,7 +38,9 @@ export default function RootLayout({
         {/* <WhatsNewBlog/> */}
         {/* <WhatsNewResearch></WhatsNewResearch> */}
         {/* <WhatsNewReleaseNotes></WhatsNewReleaseNotes> */}
-        <Enterprise/>
+        {/* <Enterprise/> */}
+        {/* <EnterpriseServices/> */}
+        <EnterpriseFeatures/>
       </body>
     </html>
   );
