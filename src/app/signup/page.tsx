@@ -1,13 +1,24 @@
-"use client";
 
+"use client";
 import Image from "next/image";
-import { Briefcase, User } from "lucide-react";
-import { useState } from "react";
+import { Briefcase, Link, User } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function SigIn() {
+export default function SignupPage() {
   const [userType, setUserType] = useState<"youtuber" | "buisness" | null>(null);
   const router = useRouter();
+  const [isScrolled, setIsScrolled] = useState(false)
+    
+    useEffect(() => {
+      const handleScroll = () => {
+        setIsScrolled(window.scrollY > 0)
+      }
+  
+      window.addEventListener('scroll', handleScroll)
+      return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+  
 
   const getButtonLabel = () => {
     if (userType === "youtuber") return "Join as a Youtuber";
@@ -15,21 +26,26 @@ export default function SigIn() {
     return "Create Account";
   };
 
-  const handleButtonClick = () => {
-    if (userType === "youtuber") {
-      router.push("/ClientSignup.tsx"); 
-    } else if (userType === "buisness") {
-      router.push("/BuisnessSignupForm.tsx");
-    } else {
-      router.push("/signIn.tsx");
-    }
-  };
-
+    const handleButtonClick = () => {
+      if (userType === "youtuber") {
+        router.push("/signup/youtubersignup");
+      } else if (userType === "buisness") {
+        router.push("/signup/bussinessignup"); 
+      } else {
+        router.push("/Signup"); 
+      }
+    };
+    
   return (
+    <>
+        <div
+            className={`w-full p-[16px] fixed bg-white z-10 transition-all ${
+              isScrolled ? 'border-b border-b-[#d9d9d9]' : ''
+            }`}
+          >
+            <Image src="/images.png" alt="Upwork Logo" width={80} height={20} />
+          </div>
     <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4">
-      <div className="absolute top-6 left-6">
-        <Image src="/images.png" alt="Upwork Logo" width={80} height={20} />
-      </div>
 
       <h1 className="text-2xl md:text-4xl font-[500] text-black mb-10 text-center">
         Join as a Youtuber or Buisness
@@ -72,7 +88,7 @@ export default function SigIn() {
             />
           </div>
           <p className="text-2xl font-[500] text-black">
-            I am a freelancer, looking for work
+            I am a Youtuber, looking for work
           </p>
         </label>
       </div>
@@ -86,10 +102,11 @@ export default function SigIn() {
 
       <p className="mt-4 text-sm text-gray-600">
         Already have an account?{" "}
-        <a href="/Login" className="text-[#108a00] underline hover:text-[#108a00]">
+        <a href="/login" className="text-[#108a00] underline hover:text-[#108a00]">
           Log In
         </a>
       </p>
     </div>
+    </>
   );
 }
