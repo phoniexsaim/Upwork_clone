@@ -1,14 +1,12 @@
-// import SigIn from "./Components/signIn";
 "use client"
-// import Navbar from "./Components/Navbar";
-// import PricingContact from "./Components/PricingContact";
-// import Login from "./Pages/Login";
+
+import MainHome from "./home/page";
+
 
 export default function Page() {
   return (
     <>
-        {/* <Navbar/> */}
-        {/* <PricingContact/> */}
+         <MainHome/>
     </>
   );
 }
