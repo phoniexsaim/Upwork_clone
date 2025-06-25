@@ -1,14 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import MainHome from "./Pages/Home";
-import WhatsNewBlog from "./Pages/What's_New-Blog";
-import WhatsNewResearch from "./Pages/What's_New-Resarch";
-import WhatsNewReleaseNotes from "./Pages/What's_New-Release_Notes";
-import Enterprise from "./Pages/Enterprise";
-import EnterpriseServices from "./Pages/EnterpriseServices";
-import EnterpriseFeatures from "./Pages/EnterpriseFeatures";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -35,12 +28,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        {/* <WhatsNewBlog/> */}
-        {/* <WhatsNewResearch></WhatsNewResearch> */}
-        {/* <WhatsNewReleaseNotes></WhatsNewReleaseNotes> */}
-        {/* <Enterprise/> */}
-        {/* <EnterpriseServices/> */}
-        <EnterpriseFeatures/>
+       
       </body>
     </html>
   );

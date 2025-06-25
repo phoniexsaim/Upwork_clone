@@ -10,7 +10,7 @@ export default function HomeContainer() {
     <div className="mx-34 font-sans rounded-2xl overflow-hidden shadow-lg">
       <div
         className="relative w-full h-[600px] bg-cover bg-center"
-        style={{ backgroundImage: "url('/ApartmentCoder.jpg')" }}
+        style={{ backgroundImage: "url('/Images/ApartmentCoder.jpg')" }}
       >
         <div className="absolute inset-0 bg-opacity-40"></div>
 
@@ -98,10 +98,10 @@ export default function HomeContainer() {
 
     {/* Logos */}
     <div className="mt-6 flex justify-between items-center text-gray-400 text-sm">
-      <span><img src="/logo-microsoft-grey.svg" alt="Microsoft" /></span>
-      <span><img src="/logo-airbnb-grey.svg" alt="Airbnb" /></span>
-      <span><img src="/logo-bissell-grey.svg" alt="Bissell" /></span>
-      <span><img src="/logo-glassdoor.svg" alt="Glassdoor" /></span>
+      <span><img src="/Images/logo-microsoft-grey.svg" alt="Microsoft" /></span>
+      <span><img src="/Images/logo-airbnb-grey.svg" alt="Airbnb" /></span>
+      <span><img src="/Images/logo-bissell-grey.svg" alt="Bissell" /></span>
+      <span><img src="/Images/logo-glassdoor.svg" alt="Glassdoor" /></span>
     </div>
   </>
 ) : (

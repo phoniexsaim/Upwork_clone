@@ -1,7 +1,7 @@
 
 "use client";
 import Image from "next/image";
-import { Briefcase, Link, User } from "lucide-react";
+import { Briefcase, User } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 

@@ -44,7 +44,7 @@ export default function HomeExpertise() {
 
       <div className="h-full">
         <img
-          src="/enterprise-2023.webp"
+          src="/Images/enterprise-2023.webp"
           alt="Enterprise Suite"
           className="w-full h-full object-cover rounded-r-lg"
         />

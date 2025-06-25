@@ -500,7 +500,7 @@ const Navbar = () => {
 
               {/* Enterprise */}
               <Link
-                href="#"
+                href="/Enterprise/MainEnterprise"
                 className="font-medium text-sm text-gray-800 hover:text-green-600"
                 onClick={handleEnterpriseClick}
               >

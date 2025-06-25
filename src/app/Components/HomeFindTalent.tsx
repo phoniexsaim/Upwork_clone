@@ -8,7 +8,7 @@ export default function HomeFindTalent() {
   <div className="max-w-7xl font-sans mx-auto px-6 py-16">
   <section className="relative w-full rounded-lg overflow-hidden">
     <img
-      src="/find-talent.jpg"
+      src="/Images/find-talent.jpg"
       alt="Find Talent"
       className="w-full h-[600px] object-cover"
     />
