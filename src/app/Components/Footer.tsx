@@ -4,7 +4,7 @@ import { IoLogoAndroid } from "react-icons/io";
 
 export default function Footer() {
     return (
-      <footer className="bg-[#1a1a1a] text-white mx-[50px] mb-[24px] pt-[8rem] py-[64px] px-[80px] rounded-[8px]">
+      <footer className="max-w-[1350px] bg-black text-white md:rounded-lg md:mb-8 mb-4 sm:rounded-none font-sans mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h4 className="text-sm text-[#A5A5A5] mb-4">For Youtubers</h4>

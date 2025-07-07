@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 
@@ -57,29 +57,49 @@ const testimonials = [
 
 export default function TestimonialSlider() {
   const [index, setIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
-    <div className="relative font-sans max-w-7xl mx-auto px-4 md:px-6 py-16 mt-10 overflow-hidden">
-      <h2 className="text-4xl font-bold mb-10">
-        Trusted by leading brands and startups
+    <div className="relative font-sans max-w-7xl mx-auto px-4 md:px-6 py-16 overflow-hidden">
+      <h2 className="md:text-[60px] text-[38px] leading-10 md:leading-14 text-black font-[500] mb-10">
+        Trusted by leading <br /> brands and startups
       </h2>
 
+      {/* Cards Container */}
       <div
-        className="flex transition-transform duration-500 ease-in-out gap-4"
+        className={`
+          flex 
+          gap-4 
+          transition-transform 
+          duration-500 
+          ease-in-out 
+          md:flex-row 
+          flex-col 
+          md:overflow-hidden 
+        `}
         style={{
-          transform: `translateX(-${index * 45}%)`,
-          width: `${testimonials.length * 45}%`,
+          transform: isMobile ? 'none' : `translateX(-${index * 45}%)`,
+          width: isMobile ? '100%' : `${testimonials.length * 45}%`,
         }}
       >
         {testimonials.map((item, idx) => (
           <div
             key={idx}
-            className="w-[35%] flex-shrink-0 rounded-xl h-[520px] overflow-hidden"
+            className="md:w-[35%] w-full flex-shrink-0 rounded-xl h-[520px] overflow-hidden"
           >
             {item.type === 'logoCard' ? (
-              <div className="flex h-full rounded-xl overflow-hidden bg-white shadow mt-6">
-                {/* Left Image */}
-                <div className="w-[45%] h-full">
+              <div className="flex h-full rounded-xl overflow-hidden bg-white shadow mt-6 flex-col md:flex-row">
+                <div className="md:w-[45%] w-full h-[200px] md:h-full">
                   <Image
                     src={item.leftImage}
                     alt="Person working"
@@ -89,17 +109,17 @@ export default function TestimonialSlider() {
                   />
                 </div>
 
-                <div className="w-[55%] bg-black text-white px-9 py-18 flex flex-col justify-start">
+                <div className="md:w-[55%] w-full bg-black text-white px-6 py-6 flex flex-col justify-start">
                   <p className="text-[20px] text-white mb-4">{item.heading}</p>
-                  <div className="flex flex-col gap-8 mt-2">
+                  <div className="flex flex-wrap md:flex-col gap-4">
                     {item.logos.map((logo, i) => (
                       <Image
                         key={i}
                         src={logo}
                         alt={`Company logo ${i}`}
-                        width={120}
+                        width={100}
                         height={40}
-                        className="object-contain gap-4"
+                        className="object-contain"
                       />
                     ))}
                   </div>
@@ -147,21 +167,20 @@ export default function TestimonialSlider() {
         ))}
       </div>
 
-      {/* Left Arrow */}
+      {/* Arrows (desktop only) */}
       {index > 0 && (
         <button
           onClick={() => setIndex(index - 1)}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 cursor-pointer"
+          className="hidden md:flex absolute left-2 top-[60%] transform -translate-y-1/2 bg-white rounded-full shadow p-2 cursor-pointer"
         >
           <FaArrowLeftLong className="w-5 h-5 text-[#108a00]" />
         </button>
       )}
 
-      {/* Right Arrow */}
       {index < testimonials.length - 2 && (
         <button
           onClick={() => setIndex(index + 1)}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 cursor-pointer"
+          className="hidden md:flex absolute right-2 top-[60%] transform -translate-y-1/2 bg-white rounded-full shadow p-2 cursor-pointer"
         >
           <FaArrowRightLong className="w-5 h-5 text-[#108a00]" />
         </button>
