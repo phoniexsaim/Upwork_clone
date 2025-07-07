@@ -11,10 +11,10 @@ export default function HomeWhyBuisness() {
     return(
         <>
      <section className="bg-white py-16">
-  <div className="max-w-7xl font-sans mx-auto px-6 relative flex flex-col lg:flex-row gap-6">
+  <div className="max-w-7xl font-sans mx-auto md:px-6 sm:px-0 relative flex flex-col lg:flex-row gap-6">
     
-    <div className="w-full lg:w-[70%] bg-gray-50 p-10 rounded-lg z-10 relative">
-      <h2 className="text-[64px] font-[500] mb-8 text-black text-base/16 max-w-[500px]">
+    <div className="w-full lg:w-[70%] bg-none md:bg-gray-50 p-10 md:rounded-lg sm:rounded-sm z-10 relative">
+      <h2 className="md:text-[64px] text-[40px] font-[500] mb-8 text-black text-base/10 md:text-base/16 max-w-[500px]">
         Why businesses turn to Upwork
       </h2>
 
@@ -42,11 +42,11 @@ export default function HomeWhyBuisness() {
           },
         ].map(({ icon, title, desc }) => (
           <div key={title} className="max-w-[480px]">
-            <h4 className="text-[34px] font-[500] text-black mb-1 flex items-center">
+            <h4 className="md:text-[34px] text-[24px] font-[500] text-black mb-1 flex items-center">
               {icon}
               <span>{title}</span>
             </h4>
-            <p className="text-[#676767] text-[16px] ml-8 font-[400] leading-snug max-w-[340px]">
+            <p className="text-[#676767] md:text-[16px] text-[14px] ml-8 font-[400] leading-snug max-w-[340px]">
               {desc}
             </p>
           </div>
@@ -54,8 +54,8 @@ export default function HomeWhyBuisness() {
       </div>
     </div>
 
-<div className="w-full lg:w-[30%] bg-[#14a800] text-white p-10 rounded-lg z-10 relative flex flex-col justify-end">
-  <h3 className="text-[34px] font-[500] text-base/8 mb-2 ">
+<div className="w-full lg:w-[30%] bg-[#14a800] text-white p-10 md:rounded-lg sm:rounded-sm z-10 relative flex flex-col justify-end">
+  <h3 className="text-[34px] font-[500] text-base/8 md:mb-2 mb-8">
     We’re <br />
     the world’s work<br />
     marketplace
@@ -86,7 +86,7 @@ export default function HomeWhyBuisness() {
 
 
     {/* Larger Overlapping Image */}
-    <div className="absolute left-[66%] top-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[0.75] z-20 pointer-events-none">
+    <div className="absolute md:left-[66%] left-[78%] md:top-1/2 top-[27%] transform -translate-x-1/2 -translate-y-1/2 md:scale-[0.75] scale-[1.7] z-20 pointer-events-none">
       <Image
         src="/person-with-headset.webp"
         alt="Person"
