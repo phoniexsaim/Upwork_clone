@@ -12,7 +12,7 @@ export default function HomeContainer() {
         className="relative w-full h-[480px] md:h-[600px] bg-cover bg-no-repeat bg-center"
         style={{ backgroundImage: "url('/Images/ApartmentCoder.jpg')" }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 md:bg-black/10"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-34 md:py-20 flex flex-col">
           {/* Heading */}
