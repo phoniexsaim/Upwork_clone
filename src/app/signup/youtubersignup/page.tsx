@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaApple, FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function YoutuberSignupForm() {
   const [showPassword, setShowPassword] = useState(false);
@@ -13,11 +14,13 @@ export default function YoutuberSignupForm() {
       
       <div className="w-full flex justify-between items-center px-10 py-6">
         <div>
+          <Link href="/home">
           <Image src="/images.png" alt="Upwork Logo" width={80} height={20} />
+          </Link>
         </div>
         <div className="text-sm text-black space-x-1">
           <span className="mr-8 text-[16px]">Looking for work?</span>
-          <a href="#" className="text-[#108a00] hover:underline text-[16px] hover:text-black">Apply as a talent</a>
+          <a href="/signup/bussinessignup" className="text-[#108a00] hover:underline text-[16px] hover:text-black">Apply as a talent</a>
         </div>
       </div>
 
@@ -105,13 +108,13 @@ export default function YoutuberSignupForm() {
               </span>
             </div>
 
-            <button type="submit" className="w-full bg-[#108a00] text-white py-2 rounded font-medium">
+            <button type="submit" className="w-full bg-[#108a00] cursor-pointer text-white py-2 rounded font-medium">
               Create my account
             </button>
           </form>
 
           <p className="text-center text-sm text-black">
-            Already have an account? <a href="#" className="text-[#108a00] underline">Log In</a>
+            Already have an account? <a href="/login" className="text-[#108a00] underline">Log In</a>
           </p>
         </div>
       </div>

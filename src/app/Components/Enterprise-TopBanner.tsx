@@ -14,9 +14,10 @@ export default function EnterpriseTopBanner() {
     <div className="w-full md:w-[43%] text-left">
       <p className="text-[10px] md:text-[12px] mt-2 mb-4 font-[600]">UPWORK ENTERPRISE</p>
 
-      <h1 className="text-[32px] md:text-[64px] font-[600] text-base/16 mb-6 md:mb-9 leading-tight">
-        Bring top talent to your business, your way
-      </h1>
+      <h1 className="text-[32px] md:text-[64px] font-[600] mb-6 md:mb-9 leading-[1.1]">
+  Bring top talent to your business, your way
+</h1>
+
 
       <p className="text-[14px] md:text-[20px] leading-relaxed">
         Build your dream team, fill skill gaps, and <br className="hidden md:block" />
