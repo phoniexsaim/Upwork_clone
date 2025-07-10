@@ -3,12 +3,20 @@
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { CiSearch } from 'react-icons/ci';
-import { FiChevronDown, FiUsers, FiBriefcase, FiFileText, FiArrowLeft, FiX, FiChevronLeft } from 'react-icons/fi';
+import { FiChevronDown, FiUsers, FiBriefcase, FiFileText, FiX, FiChevronLeft } from 'react-icons/fi';
 import { MdKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from 'react-icons/md';
 import { HiOutlineArrowRight } from 'react-icons/hi';
-import { FaAngleLeft, FaBars, FaSearch, FaTimes } from 'react-icons/fa';
+import { FaBars, FaSearch, FaTimes } from 'react-icons/fa';
 
-const Navbar = () => {
+import { usePathname } from 'next/navigation';
+
+type NavbarProps = {
+  isEnterprise?: boolean;
+};
+
+const Navbar = ({ isEnterprise = false }: NavbarProps) => {
+  const pathname = usePathname();
+  const isEnterprisePath = pathname.startsWith('/Enterprise/MainEnterprise');
   const [activeMainMenu, setActiveMainMenu] = useState<string | null>(null);
   const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null);
   const [isEnterpriseClicked, setIsEnterpriseClicked] = useState(false);
@@ -23,6 +31,8 @@ const Navbar = () => {
   const [showFullscreen, setShowFullscreen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [menusOpen, setMenusOpen] = useState(false);
+  const useEnterpriseTheme = isEnterprise || isEnterprisePath;
+
 
   const toggleMenusOpen = () => {
     setMenusOpen(prev => !prev);
@@ -92,17 +102,33 @@ const Navbar = () => {
     setIsEnterpriseClicked(true);
   };
 
+
   return (
     <>
-      <nav className={`bg-white fixed w-full z-50 ${isScrolled ? '' : ''}`}>
-        <div className="md:mx-[1rem] px-4">
+ <nav
+      className={`fixed w-full z-[100] transition-all duration-300 ${
+    useEnterpriseTheme ? 'bg-black text-white' : 'bg-white text-black'
+  } ${isScrolled ? 'shadow-md' : ''}`}
+    >        <div className="md:mx-[1rem] px-4">
           <div className="flex items-center justify-between h-16">
           
             <div className="flex just items-center gap-[9px]">
 
               <Link href="/home" className="flex items-center">
-              <img src="/Images/UpWorkNavbarLogo.png" alt="UpworkLogo" className='w-[95px] h-[95px] md:flex hidden' />
-              </Link>
+          {useEnterpriseTheme ? (
+            <img
+              src="/Images/SecondLogo.png"
+              alt="Enterprise Logo"
+              className="w-[90px] h-[25px] md:flex hidden"
+            />
+          ) : (
+            <img
+              src="/Images/UpWorkNavbarLogo.png"
+              alt="Upwork Logo"
+              className="w-[95px] h-[95px] md:flex hidden"
+            />
+          )}
+        </Link>
            
 
             {/* Desktop Menu */}
@@ -119,7 +145,7 @@ const Navbar = () => {
           }}
           onMouseLeave={() => setActiveMainMenu(null)}
         >
-          <button className="group flex font-[500] text-[14px] items-center text-[#181818] hover:text-[#14a800]">
+          <button className="group flex font-[500] text-[14px] items-center hover:text-[#14a800]">
             Find Talent
             <svg
               className={`ml-1 h-3 w-3 transition-transform duration-500 ${
@@ -314,7 +340,7 @@ const Navbar = () => {
                 onMouseLeave={() => setActiveMainMenu(null)}
                 className="relative"
               >
-                <button className="group flex text-[14px] items-center text-[#181818] hover:text-[#14a800]">
+                <button className="group flex text-[14px] items-center  hover:text-[#14a800]">
                   Find Work
                   <svg
                     className={`ml-1 h-3 w-3 transition-transform duration-500 ${
@@ -365,7 +391,7 @@ const Navbar = () => {
                 onMouseEnter={() => handleMainMenuHover('why')}
                 onMouseLeave={() => setActiveMainMenu(null)}
               >
-                <button className="flex text-[14px] items-center text-[#181818] hover:text-[#14a800]">
+                <button className="flex text-[14px] items-center hover:text-[#14a800]">
                   Why Upwork
                   <svg
                     className={`ml-1 h-3 w-3 transition-transform duration-500 ${
@@ -449,7 +475,7 @@ const Navbar = () => {
                onMouseEnter={() => handleMainMenuHover('whatsNew')}
                onMouseLeave={() => setActiveMainMenu(null)}
              >
-               <button className="flex items-center text-[#181818] hover:text-[#14a800] text-[14px]">
+               <button className="flex items-center hover:text-[#14a800] text-[14px]">
                  What's new
                  <svg
                    className={`ml-1 h-3 w-3 transition-transform duration-500 ${
@@ -501,7 +527,7 @@ const Navbar = () => {
               {/* Enterprise */}
               <Link
                 href="/Enterprise/MainEnterprise"
-                className="font-medium text-sm text-gray-800 hover:text-green-600"
+                className="font-medium text-sm  hover:text-green-600"
                 onClick={handleEnterpriseClick}
               >
                 Enterprise
@@ -509,7 +535,7 @@ const Navbar = () => {
 
               {/* Pricing */}
               {!isEnterpriseClicked && (
-                <Link href="/pricing" className="font-medium text-sm text-gray-800 hover:text-green-600">
+                <Link href="/pricing" className="font-medium text-sm  hover:text-green-600">
                   Pricing
                 </Link>
               )}
@@ -519,16 +545,16 @@ const Navbar = () => {
               {/* Search Bar */}
             <div className="flex items-center space-x-4">
               <div className='hidden md:flex ml-[5rem] rounded-[8px] border flex-row justify-center items-center border-gray-500 px-[8px] py-[3px]'>
-                <CiSearch className='text-black text-[22px]' />
+                <CiSearch className=' text-[22px]' />
                 <input 
                     type='text'
                     placeholder='Search'
-                    className='text-gray-900 text-[14px] p-[5px] outline-none'/>
+                    className=' text-[14px] p-[5px] outline-none'/>
                 <span className='text-gray-500 mr-[10px]'>|</span>
 
                 <button
                 onClick={toggleDropdown}
-                className="flex items-center text-[#181818] text-[14px] font-medium"
+                className="flex items-center  text-[14px] font-medium"
               >
                 <span>{selectedOption}</span>
                 <FiChevronDown className={`ml-1 h-3 w-3 transition-transform duration-300 ${dropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
@@ -576,7 +602,7 @@ const Navbar = () => {
 
               {/* Auth Buttons */}
               <div className="flex items-center space-x-4 ">
-                <Link href="/login" className="text-sm font-medium text-gray-800 hover:text-green-600 hidden md:flex">
+                <Link href="/login" className="text-sm font-medium  hover:text-green-600 hidden md:flex">
                   Log In
                 </Link>
                 <Link
@@ -593,8 +619,11 @@ const Navbar = () => {
         </div>
       </nav>
 
-  <div className="fixed top-0 z-50 bg-white w-full mx-auto md:hidden">
-     {!searchOpen && (
+  <div
+    className={`fixed top-0 z-[100] w-full mx-auto md:hidden transition-all duration-300 ${
+    useEnterpriseTheme ? 'bg-black text-white' : 'bg-white text-black'
+  }`}
+  >     {!searchOpen && (
         <div className="flex items-center justify-between px-4 bg-white border-b border-b-[#d9d9d9]">
           {/* Left - Menu & Logo */}
           <div className="flex items-center">
@@ -604,7 +633,7 @@ const Navbar = () => {
             >
               {mobileMenuOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
             </button>
-            <Link href="/" className="flex items-center ml-2">
+            <Link href="/home" className="flex items-center ml-2">
               <img 
                 src="/Images/UpWorkNavbarLogo.png" 
                 alt="UpworkLogo" 
@@ -1060,7 +1089,7 @@ const Navbar = () => {
                        </div>
      
                        <div className="px-[16px] py-[20px] my-[8px]">
-                         <Link href="#" className="block font-medium text-[14px]" onClick={closeAllMenus}>
+                         <Link href="/Enterprise/MainEnterprise" className="block font-medium text-[14px]" onClick={closeAllMenus}>
                            Enterprise
                          </Link>
                        </div>

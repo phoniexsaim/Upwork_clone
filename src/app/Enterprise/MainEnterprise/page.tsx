@@ -14,12 +14,14 @@ import EnterpriseTopBanner from "@/app/Components/Enterprise-TopBanner";
 import EnterpriseTrusted from "@/app/Components/Enterprise-Trusted";
 import EnterpriseVideo from "@/app/Components/Enterprise-Video";
 import Footer from "@/app/Components/Footer";
+import Navbar from "@/app/Components/Navbar";
 import { useRef } from "react";
 export default function Enterprise() {
   const triggerRef = useRef(null);
 
   return (
     <>
+       <Navbar isEnterprise/>
       <div className="bg-black">
         <EnterpriseSmallNav/>
         <div className="pt-[60px]">

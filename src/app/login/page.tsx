@@ -38,7 +38,9 @@ export default function Login() {
         isScrolled ? 'border-b border-b-[#d9d9d9]' : ''
       }`}
     >
+      <Link href="/home">
       <Image src="/images.png" alt="Upwork Logo" width={80} height={20} />
+      </Link>
     </div>
 
       <div

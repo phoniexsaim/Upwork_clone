@@ -3,7 +3,7 @@ export default function EnterpriseSmallNav() {
 
 return (
     <>
- <nav className="fixed top-0 left-0 w-full z-50 bg-[#181818] text-white shadow-md">
+ <nav className="fixed md:top-[50px] top-[70px] left-0 w-full md:z-50 z-[100] bg-[#181818] text-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-4 md:py-6 flex gap-6 md:gap-6 text-[12px] md:text-[14px] flex-wrap">
         <Link href={"/Enterprise/MainEnterprise"} className="hover:text-[#14a800] hover:underline">Enterprise Suite</Link>
         <Link href={"/Enterprise/ServiceEnterprise"} className="hover:text-[#14a800] hover:underline">Managed Services</Link>

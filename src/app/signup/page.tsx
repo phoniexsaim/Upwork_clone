@@ -21,8 +21,8 @@ export default function SignupPage() {
   
 
   const getButtonLabel = () => {
-    if (userType === "youtuber") return "Join as a Youtuber";
-    if (userType === "buisness") return "Apply as a Buisness";
+    if (userType === "youtuber") return "Apply as a Buisness";
+    if (userType === "buisness") return "Join as a Youtuber";
     return "Create Account";
   };
 
@@ -68,7 +68,7 @@ export default function SignupPage() {
             />
           </div>
           <p className="text-2xl font-[500] text-black">
-            I am a client, hiring for a project
+            I am a buisness, hiring for a project
           </p>
         </label>
 
