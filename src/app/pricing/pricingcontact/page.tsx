@@ -1,6 +1,4 @@
 "use client"
-
-
 import React, { useMemo } from 'react'
 import { useState } from 'react';
 
@@ -295,7 +293,6 @@ const [searchQuery, setSearchQuery] = useState('');
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  // Handle form submission
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
@@ -419,7 +416,6 @@ const [searchQuery, setSearchQuery] = useState('');
           </h1>
           
           <form onSubmit={handleSubmit}>
-            {/* First Name & Last Name */}
             <div className="w-full mb-[15px] justify-between flex flex-col md:flex-row gap-[20px] ">
               <div className='w-full'>
                 <input
@@ -442,11 +438,7 @@ const [searchQuery, setSearchQuery] = useState('');
                   required
                 />
                  </div>
-            </div>
-            
-            
-            {/* Work Email Address */}
-             
+            </div>             
               
               <div className="space-y-4">
                 <div>
@@ -460,14 +452,12 @@ const [searchQuery, setSearchQuery] = useState('');
                   />
                 </div>
                 
-                {/* Phone Number */}
                 <div>
                   <div className="flex items-center mb-1">
                  
                   </div>
                   
                   <div className="flex border-2 border-[#313131] outline-gray-300 rounded-md">
-      {/* Country Code Dropdown */}
       <div className="relative w-1/3 mr-2">
         <button
           type="button"
@@ -524,7 +514,6 @@ const [searchQuery, setSearchQuery] = useState('');
           </div>
         )}
       </div>
-      {/* Phone Input */}
       <input
         type="tel"
         name="phone"
@@ -532,12 +521,9 @@ const [searchQuery, setSearchQuery] = useState('');
         placeholder="Phone number"
       />
     </div>
-                
                 </div>
               </div>
             
-            
-            {/* Job Title & Company Name */}
             <div className="space-y-4 mb-4">
               <div>
                 <input
@@ -562,7 +548,6 @@ const [searchQuery, setSearchQuery] = useState('');
               </div>
             </div>
             
-            {/* Company Size */}
             <div className="mb-4"> 
               <div className="relative mt-1">
                 <button
@@ -610,7 +595,6 @@ const [searchQuery, setSearchQuery] = useState('');
               </div>
             </div>
             
-            {/* Submit Button */}
             <button
               type="submit"
               className="w-[150px] bg-[#95DF00] text-[#181818] py-[14px] px-[48px] rounded-[15px]  hover:scale-95 font-medium"
@@ -619,7 +603,6 @@ const [searchQuery, setSearchQuery] = useState('');
             </button>
           </form>
           
-          {/* Privacy Policy */}
           <div className="mt-6 text-xs text-gray-500">
             <p className="mb-[48px] text-[14px] leading-[1.2em] tracking-[.42px] text-[#d9d9d9]">
               We’ll use your personal information to contact you, schedule a call, and communicate about Enterprise Suite and Upwork services. The use of your information is governed by Upwork’s<span className='text-[14px] underline text-[#95DF00]'> Privacy Policy.</span></p>

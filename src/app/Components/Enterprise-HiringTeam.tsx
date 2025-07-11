@@ -1,14 +1,11 @@
 "use client";
-
 import { HiOutlineArrowRight } from "react-icons/hi";
-
 
 export default function EnterpriseHiringTeam() {
   return (
-    <>
-   <div className="w-full max-w-7xl font-sans mx-auto mb-14 px-4">
+<>
+<div className="w-full max-w-7xl font-sans mx-auto mb-14 px-4">
   <div className="flex flex-col lg:flex-row justify-center gap-6">
-    {/* Card 1 */}
     <div className="w-full lg:w-1/3">
       <div className="group transition-all duration-500 ease-in-out">
         <div className="rounded-[24px] cursor-pointer w-full h-[400px] sm:h-[500px] lg:h-[550px] group-hover:h-[600px] transition-all duration-500 ease-in-out relative overflow-hidden">
@@ -45,7 +42,6 @@ export default function EnterpriseHiringTeam() {
       </div>
     </div>
 
-    {/* Card 2 */}
     <div className="w-full lg:w-1/3">
       <div className="group transition-all duration-500 ease-in-out">
         <div className="rounded-[24px] w-full h-[400px] sm:h-[500px] lg:h-[550px] group-hover:h-[600px] transition-all duration-500 ease-in-out relative cursor-pointer overflow-hidden">
@@ -89,7 +85,6 @@ export default function EnterpriseHiringTeam() {
       </div>
     </div>
 
-    {/* Card 3 */}
     <div className="w-full lg:w-1/3">
       <div className="group transition-all duration-500 ease-in-out">
         <div className="rounded-[24px] w-full h-[400px] sm:h-[500px] lg:h-[550px] group-hover:h-[600px] transition-all duration-500 ease-in-out relative cursor-pointer overflow-hidden">
@@ -133,7 +128,6 @@ export default function EnterpriseHiringTeam() {
     </div>
   </div>
 </div>
-
-    </>
+</>
   )
 }

@@ -1,5 +1,4 @@
 "use client";
-
 import Footer from "@/app/Components/Footer";
 import Navbar from "@/app/Components/Navbar";
 import ResearchBanner from "@/app/Components/ResarchBanner";
@@ -11,7 +10,7 @@ import ResearchSelect from "@/app/Components/ResearchSelect";
 
 export default function WhatsNewResearch() {
   return (
-    <>
+<>
     <Navbar/>
      <ResearchBanner></ResearchBanner>
      <ResearchSecondBanner></ResearchSecondBanner>
@@ -20,6 +19,6 @@ export default function WhatsNewResearch() {
      <ResearchAbout></ResearchAbout>
      <ResearchExperts></ResearchExperts>
      <Footer></Footer>
-    </>
+</>
   );
 }

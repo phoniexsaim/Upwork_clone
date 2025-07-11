@@ -2,8 +2,8 @@
 
 export default function EnterpriseFeatureBuisness() {
     return(
-        <>
-        <div className="w-full max-w-7xl py-16 font-sans mx-auto px-4">
+<>
+<div className="w-full max-w-7xl py-16 font-sans mx-auto px-4">
                 <div className="mb-8 flex justify-center">
                     <h1 className="md:text-[48px] font-[600] text-[32px] leading-[1.0]">Businesses like yours love our talent</h1>
                 </div>
@@ -64,7 +64,6 @@ export default function EnterpriseFeatureBuisness() {
                     </div>
                  </div> */}
         </div>
-
-        </>
+</>
     )
 }

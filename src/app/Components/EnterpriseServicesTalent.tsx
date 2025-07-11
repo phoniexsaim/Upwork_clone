@@ -2,25 +2,21 @@
 
 export default function EnterpriseServicesTalent() {
   return (
-    <>
+<>
  <div className="w-full max-w-7xl py-16 font-sans mx-auto mb-0 px-4">
-  {/* Responsive Heading */}
   <div className="flex justify-center md:justify-center mb-8">
     <h1 className="text-[30px] leading-[32px] font-[600] md:text-[48px] md:leading-[1.2] text-left md:text-center">
       Top talent and experts at a controlled-cost
     </h1>
   </div>
 
-  {/* Responsive Layout Container */}
   <div className="relative w-full h-auto md:h-[600px] flex flex-col md:block">
-    {/* Image */}
     <img
       src="/Images/ServiceBanner.jpg"
       alt="background"
       className="w-full h-[220px] sm:h-[300px] md:h-full object-cover rounded-[24px]"
     />
 
-    {/* Text box */}
     <div className="relative md:absolute top-0 right-0 md:h-full flex items-start md:items-center justify-start md:justify-end px-4 md:pr-10 mt-6 md:mt-0">
       <div className="bg-[#0e0e0e] text-white p-6 md:p-14 rounded-[24px] md:rounded-[40px] w-full md:max-w-[450px]">
         <h2 className="text-[20px] leading-[1.3] font-[500] mb-4 md:text-[28px] md:mb-6">
@@ -42,8 +38,6 @@ export default function EnterpriseServicesTalent() {
     </div>
   </div>
 </div>
-
-
-    </>
+</>
   );
 }

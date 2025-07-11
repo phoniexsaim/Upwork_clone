@@ -1,5 +1,4 @@
 "use client";
-
 import { useRef } from "react";
 import EnterpriseScroll from "@/app/Components/Enterprise-Scroll";
 import EnterpriseFeatureBanner from "@/app/Components/EnterpriseFeature-Banner";
@@ -16,10 +15,9 @@ import Navbar from "@/app/Components/Navbar";
 
 export default function EnterpriseFeatures() {
       const triggerRef = useRef(null);
-    
   return (
-    <>
-       <Navbar isEnterprise/>
+<>
+   <Navbar isEnterprise/>
     <div className="bg-black">
         <EnterpriseSmallNav/>
      <div className="pt-[60px]">
@@ -36,7 +34,7 @@ export default function EnterpriseFeatures() {
          <Footer />
     </div>
     </div>
-          <EnterpriseScroll triggerRef={triggerRef} />
-    </>
+   <EnterpriseScroll triggerRef={triggerRef} />
+</>
   );
 }

@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 
 const services = [
@@ -63,7 +62,7 @@ export default function EnterpriseLanguages() {
   const bottomRow = services.slice(9, 18);
 
     return(
-        <>
+<>
   <div className="relative w-full bg-black flex justify-center items-center flex-col py-16 font-sans overflow-hidden space-y-6">
   <div className="relative w-full max-w-7xl mx-auto px-6 py-16 overflow-hidden">
     
@@ -145,7 +144,6 @@ export default function EnterpriseLanguages() {
     `}</style>
   </div>
 </div>
-
-        </>
+</>
     )
 }

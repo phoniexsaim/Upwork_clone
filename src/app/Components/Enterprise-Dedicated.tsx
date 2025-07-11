@@ -1,7 +1,5 @@
 "use client";
-
 import { HiOutlineArrowRight } from "react-icons/hi";
-
 
 export default function EnterpriseDedicated() {
   return (
@@ -17,7 +15,6 @@ export default function EnterpriseDedicated() {
   </div>
 
   <div className="flex justify-center gap-7 max-md:flex-col max-md:items-start max-md:gap-8 mt-10">
-    {/* Block 1 */}
     <div className="max-md:text-left">
       <div className="max-md:flex max-md:items-center max-md:gap-4 max-md:mb-[16px]">
         <img
@@ -34,7 +31,6 @@ export default function EnterpriseDedicated() {
       </p>
     </div>
 
-    {/* Block 2 */}
     <div className="max-md:text-left">
       <div className="max-md:flex max-md:items-center max-md:gap-4 max-md:mb-[16px]">
         <img
@@ -51,7 +47,6 @@ export default function EnterpriseDedicated() {
       </p>
     </div>
 
-    {/* Block 3 */}
     <div className="max-md:text-left">
       <div className="max-md:flex max-md:items-center max-md:gap-4 max-md:mb-[16px]">
         <img
@@ -80,8 +75,6 @@ export default function EnterpriseDedicated() {
     </button>
   </div>
 </div>
-
-
     </>
   );
 }

@@ -1,7 +1,5 @@
 "use client";
 
-
-
 export default function EnterpriseForSmallTalent() {
   return (
     <>
@@ -14,7 +12,6 @@ export default function EnterpriseForSmallTalent() {
     </div>
 
     <div className="flex flex-col md:flex-row md:justify-center md:gap-7 gap-10">
-      {/* Card 1 */}
       <div className="text-left text-white w-full md:w-auto">
         <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
           <img src="/Images/Project1.webp" alt="image" className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-contain" />
@@ -27,7 +24,6 @@ export default function EnterpriseForSmallTalent() {
         </p>
       </div>
 
-      {/* Card 2 */}
       <div className="text-left text-white w-full md:w-auto">
         <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
           <img src="/Images/Project2.webp" alt="image" className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-contain" />
@@ -40,7 +36,6 @@ export default function EnterpriseForSmallTalent() {
         </p>
       </div>
 
-      {/* Card 3 */}
       <div className="text-left text-white w-full md:w-auto">
         <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
           <img src="/Images/Project3.webp" alt="image" className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-contain" />
@@ -53,7 +48,6 @@ export default function EnterpriseForSmallTalent() {
         </p>
       </div>
 
-      {/* Card 4 */}
       <div className="text-left text-white w-full md:w-auto">
         <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
           <img src="/Images/Project4.webp" alt="image" className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-contain" />
@@ -68,8 +62,6 @@ export default function EnterpriseForSmallTalent() {
     </div>
   </div>
 </div>
-
-
     </>
   )
 }

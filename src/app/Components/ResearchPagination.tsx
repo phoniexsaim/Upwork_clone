@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState } from 'react';
 
 const cardsData = [
@@ -146,7 +145,6 @@ export default function ResearchPagination() {
       <div className="flex gap-8 justify-center items-center mt-10">
         <button
           onClick={goToPrevious}
-        //   disabled={currentPage === 1}
           className="px-[24px] py-[9px] bg-[#108a00] text-[14px] text-white rounded-lg hover:bg-[#14a800] cursor-pointer disabled:opacity-50"
         >
           Back
@@ -156,7 +154,6 @@ export default function ResearchPagination() {
         </span>
         <button
           onClick={goToNext}
-        //   disabled={currentPage === totalPages}
           className="px-[24px] py-[9px]  text-[14px] rounded-lg bg-[#108a00] text-white  hover:bg-[#14a800] cursor-pointer disabled:opacity-50"
         >
           Next

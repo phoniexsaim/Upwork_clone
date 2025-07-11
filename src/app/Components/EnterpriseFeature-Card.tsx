@@ -2,11 +2,10 @@
 
 export default function EnterpriseFeatureCard() {
     return(
-        <>
-        <div className="w-full max-w-7xl py-16 font-sans mx-auto px-4">
+<>
+<div className="w-full max-w-7xl py-16 font-sans mx-auto px-4">
   <div className="border-2 border-[#3c3c3c] rounded-4xl p-[24px] sm:p-[60px] w-full h-auto flex flex-col items-start justify-start">
     
-    {/* Logo */}
     <div className="flex justify-start items-start">
       <img
         src="/Images/MicrosoftLogo.png"
@@ -15,7 +14,6 @@ export default function EnterpriseFeatureCard() {
       />
     </div>
 
-    {/* Heading */}
     <div className="my-6 sm:my-8">
       <h1 className="text-[24px] leading-[1.4em] font-[500] sm:text-[56px] sm:leading-[1.2em]">
         We could never have accomplished this in such a short period of time
@@ -23,7 +21,6 @@ export default function EnterpriseFeatureCard() {
       </h1>
     </div>
 
-    {/* Stat Cards */}
     <div className="flex flex-col sm:flex-row gap-4 mt-10 sm:mt-16 w-full">
       <div className="bg-[#1c1c1c] rounded-2xl p-4 sm:p-[24px] flex flex-col items-start justify-start w-full sm:w-auto">
         <h2 className="text-[24px] sm:text-[34px] font-[500]">50% Faster</h2>
@@ -36,7 +33,6 @@ export default function EnterpriseFeatureCard() {
     </div>
   </div>
 </div>
-
-        </>
+</>
 );
 }

@@ -1,7 +1,5 @@
  "use client";
-
 import { FaStar } from "react-icons/fa";
-
 
 export default function HomeTalentCategory() {
     const categories = [
@@ -15,7 +13,7 @@ export default function HomeTalentCategory() {
   { title: "Engineering & Architecture", rating: "4.85", skills: 650 },
 ];
     return(
-        <>
+<>
         <div className="max-w-7xl font-sans mx-auto px-6 py-16">
       <h2 className="text-[40px] font-[500] text-gray-900 mb-2 leading-[1.1] sm:text-[44px] sm:leading-[1.3] ">
         Browse talent by category
@@ -46,6 +44,6 @@ export default function HomeTalentCategory() {
         ))}
       </div>
     </div>
-        </>
+</>
     )
 }

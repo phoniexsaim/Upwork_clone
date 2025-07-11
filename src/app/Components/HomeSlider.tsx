@@ -1,5 +1,4 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
@@ -64,7 +63,7 @@ export default function TestimonialSlider() {
       setIsMobile(window.innerWidth < 768);
     };
 
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -75,7 +74,6 @@ export default function TestimonialSlider() {
         Trusted by leading <br /> brands and startups
       </h2>
 
-      {/* Cards Container */}
       <div
         className={`
           flex 
@@ -147,7 +145,6 @@ export default function TestimonialSlider() {
                   </div>
                 </div>
 
-                {/* Bottom Content */}
                 <div>
                   <p className="text-[16px] font-[500] mb-1">Results</p>
                   <div className="border-t border-white pt-4 space-y-3 pb-6">
@@ -167,7 +164,6 @@ export default function TestimonialSlider() {
         ))}
       </div>
 
-      {/* Arrows (desktop only) */}
       {index > 0 && (
         <button
           onClick={() => setIndex(index - 1)}

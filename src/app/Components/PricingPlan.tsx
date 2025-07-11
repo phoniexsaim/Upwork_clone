@@ -1,12 +1,10 @@
 "use client"
-import { Link } from 'lucide-react'
 import React from 'react'
 import { LuDot } from 'react-icons/lu'
 import { MdOutlineErrorOutline } from 'react-icons/md'
 
 const Pricing = () => {
   return (
-    // pt-[3rem] |
     <div className='pt-[6rem] pb-[3rem] px-[2rem] w-full'>
         <h1 className='text-[rgb(24,24,24)] text-[40px] tracking-[.025rem] leading-[1.1em] font-[500] font-Neuemontreal Variable,sans-serif mb-[2.5rem]'>Pricing plans for every business</h1>
         <div className='mb-[1rem] flex items-center'>

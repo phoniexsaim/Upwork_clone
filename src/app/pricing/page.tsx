@@ -1,5 +1,4 @@
 import React from 'react'
-import Pricing from '../Components/PricingPlan'
 import Navbar from '../Components/Navbar'
 import PricingPlan from '../Components/PricingPlan'
 import PricingkeyFeature from '../Components/PricingkeyFeature'

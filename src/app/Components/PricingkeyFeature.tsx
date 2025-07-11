@@ -1,5 +1,4 @@
 "use client";
-import { Link } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { MdOutlineErrorOutline } from 'react-icons/md';
 
@@ -16,10 +15,8 @@ export default function ComparePlans() {
       const featuresRect = featuresRef.current.getBoundingClientRect();
       const containerRect = containerRef.current.getBoundingClientRect();
 
-      // Check if key features section is in view
       setIsSticky(featuresRect.top <= 100 && featuresRect.bottom > 200);
 
-      // Check if we've scrolled past the key features section
       setScrolledPastFeatures(containerRect.bottom <= window.innerHeight);
     };
 
@@ -217,7 +214,6 @@ export default function ComparePlans() {
   </div>
 </div>
 
-{/* Support Section */}
 <div className="flex flex-col">
   <div className="flex-col border border-b-[#d9d9d9] ">
     <div>
@@ -338,7 +334,6 @@ export default function ComparePlans() {
   </div>
 </div>
 
-{/* Collaboration Section */}
 <div className="flex flex-col">
   <div className="flex-col border border-b-[#d9d9d9]">
     <div>
@@ -490,7 +485,6 @@ export default function ComparePlans() {
   </div>
 </div>
 
-{/* AI Features Section */}
 <div className="flex flex-col">
   <div className="flex-col border border-b-[#d9d9d9]">
     <div>
@@ -525,7 +519,6 @@ export default function ComparePlans() {
   </div>
 </div>
 
-{/* APIs Section */}
 <div className="flex flex-col">
   <div className="flex-col border border-b-[#d9d9d9]">
     <div>
@@ -636,7 +629,6 @@ export default function ComparePlans() {
   </div>
 </div>
 
-{/* Onboarding Section */}
 <div className="flex flex-col mb-[4rem]">
   <div className="flex-col">
     <div>

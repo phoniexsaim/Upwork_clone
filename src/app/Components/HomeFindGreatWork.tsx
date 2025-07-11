@@ -1,16 +1,13 @@
 "use client";
 import Image from "next/image";
 
-
-
 export default function MainHome() {
     return(
-        <>
+<>
 <div className="min-h-screen bg-white">
   <main className="max-w-7xl font-sans mx-auto px-4 sm:px-6 py-12 sm:py-16">
     <div className="flex flex-col-reverse lg:flex-row items-stretch">
       
-      {/* Text Card */}
       <div className="w-full lg:w-1/2 bg-[#086add] text-white pt-6 pb-8 px-6 sm:px-8 flex flex-col justify-start 
                       rounded-b-lg lg:rounded-b-none border-white lg:border-l-4">
         <p className="text-[24px] font-[600] mb-2">For talent</p>
@@ -37,7 +34,6 @@ export default function MainHome() {
         </button>
       </div>
 
-      {/* Image */}
       <div className="w-full lg:w-1/2 overflow-hidden 
                       rounded-t-lg lg:rounded-t-none ">
         <Image
@@ -52,7 +48,6 @@ export default function MainHome() {
     </div>
   </main>
 </div>
-
-        </>
-    );
+</>
+);
 }

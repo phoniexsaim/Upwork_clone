@@ -3,11 +3,10 @@
 export default function HomeTopSkill() {
 
   return (
-    <>
-     <div className="min-h-screen bg-white">
+<>
+<div className="min-h-screen bg-white">
   <main className="max-w-7xl font-sans mx-auto px-4 sm:px-6 py-12">
     <div className="flex flex-col lg:flex-row justify-between gap-y-8">
-      {/* Left column */}
       <div className="cursor-pointer">
         <h1 className="text-[28px] sm:text-[32px] lg:text-[40px] text-[#108a00]">Top skills</h1>
         <h1 className="text-[#d9d9d9] text-[28px] sm:text-[32px] lg:text-[40px] hover:text-[#108a00]">Treanding skills</h1>
@@ -17,7 +16,6 @@ export default function HomeTopSkill() {
         </h1>
       </div>
 
-      {/* Middle column */}
       <div className="cursor-pointer">
         {[
           "Generative AI Specialists",
@@ -46,7 +44,6 @@ export default function HomeTopSkill() {
         ))}
       </div>
 
-      {/* Right column */}
       <div className="cursor-pointer">
         {[
           "JavaScript Developer",
@@ -77,7 +74,6 @@ export default function HomeTopSkill() {
     </div>
   </main>
 </div>
-
-    </>
+</>
   ); 
 }

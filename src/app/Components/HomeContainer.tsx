@@ -15,7 +15,6 @@ export default function HomeContainer() {
         <div className="absolute inset-0 md:bg-black/10"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-34 md:py-20 flex flex-col">
-          {/* Heading */}
           <div className="text-white mb-6 md:mb-10 md:w-1/2">
             <h1 className="text-[36px] leading-[1.05] sm:text-[44px] sm:font-[500] sm:leading-[1.1] md:text-[55px] md:font-[600] md:leading-[1.1] max-w-full md:max-w-3xl">
               Connecting clients in need to freelancers who deliver
@@ -24,7 +23,6 @@ export default function HomeContainer() {
 
           <div className="w-full md:w-1/2 relative">
             <div className="bg-[#423a3d] rounded-xl p-4 md:p-6 text-white shadow-lg relative">
-              {/* Tabs */}
               <div className="flex space-x-2 mb-4">
                 <button
                   className={`w-1/2 py-[6px] text-sm rounded-full cursor-pointer border font-semibold text-white ${
@@ -48,10 +46,8 @@ export default function HomeContainer() {
                 </button>
               </div>
 
-              {/* Find Talent Tab */}
               {activeTab === "findTalent" ? (
                 <>
-                  {/* Input + Search button (styled like Upwork) */}
                   <div className="flex items-center bg-white rounded-full px-3 py-[6px]">
                     <input
                       type="text"
@@ -65,7 +61,6 @@ export default function HomeContainer() {
                     </button>
                   </div>
 
-                  {/* Suggestions */}
                   <div
                     className={`transition-all duration-500 ease-in-out overflow-hidden mt-4 ${
                       isPopupOpen
@@ -89,7 +84,6 @@ export default function HomeContainer() {
                     </div>
                   </div>
 
-                  {/* Logos */}
                   <div className="mt-6 flex flex-wrap justify-center md:justify-between gap-4 text-gray-400 text-xs sm:text-sm">
                     <img
                       src="/Images/logo-microsoft-grey.svg"

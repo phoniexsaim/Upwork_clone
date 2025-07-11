@@ -1,19 +1,14 @@
 "use client";
 import { HiOutlineArrowRight } from "react-icons/hi";
 
-
-
 export default function EnterpriseGovernance() {
     return (
-        <>
-
-       <div className="w-full max-w-7xl font-sans flex gap-8 mx-auto px-4 max-md:flex-col max-md:gap-6">
-  {/* Image: stays left on desktop, moves on top in mobile */}
+<>
+  <div className="w-full max-w-7xl font-sans flex gap-8 mx-auto px-4 max-md:flex-col max-md:gap-6">
   <div className="w-[60%] aspect-[1.6115] rounded-[24px] relative overflow-hidden max-md:w-full max-md:aspect-auto max-md:h-[300px]">
     <img src="/Images/IMAGE2.jpg" alt="image" className="w-full h-full object-cover rounded-[24px]" />
   </div>
 
-  {/* Text section */}
   <div className="w-[40%] mt-4 max-w-[410px] max-md:w-full max-md:mt-0">
     <div>
       <h2 className="text-[28px] mb-1 max-md:text-[20px] max-md:leading-[1.3] max-md:text-left">Governance and controls</h2>
@@ -50,8 +45,6 @@ export default function EnterpriseGovernance() {
     </div>
   </div>
 </div>
-
-
-        </>
+</>
     );
 }

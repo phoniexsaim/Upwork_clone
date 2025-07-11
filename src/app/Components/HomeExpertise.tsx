@@ -1,19 +1,14 @@
  "use client";
-
 import { FaBriefcase } from "react-icons/fa";
 import { LuPencilRuler } from "react-icons/lu";
 import { RiCustomerService2Line } from "react-icons/ri";
 
 export default function HomeExpertise() {
-
-    return(
-
- 
+return(
  <div className="min-h-screen bg-white font-sans text-gray-900">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
     <section className="grid grid-cols-1 md:grid-cols-2 items-center overflow-hidden">
       
-      {/* Image - appears first on mobile, second on desktop */}
       <div className="order-1 md:order-2 w-full h-full">
         <img
           src="/Images/enterprise-2023.webp"
@@ -22,7 +17,6 @@ export default function HomeExpertise() {
         />
       </div>
 
-      {/* Text Content */}
       <div className="order-2 md:order-1 bg-[#13544e] text-white px-5 py-8 sm:p-10 h-full flex flex-col justify-center rounded-b-lg md:rounded-none md:rounded-l-lg">
         <h3 className="text-sm font-semibold text-[20px] sm:text-[24px] mb-4 sm:mb-6">Enterprise Suite</h3>
         <h1 className="text-[30px] sm:text-[36px] md:text-[48px] leading-[1.2] font-medium mb-4 sm:mb-6">
@@ -57,8 +51,5 @@ export default function HomeExpertise() {
     </section>
   </div>
 </div>
-
-
-
-    );
+);
 }

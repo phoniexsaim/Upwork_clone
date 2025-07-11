@@ -1,4 +1,3 @@
-
 "use client";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
@@ -16,7 +15,7 @@ const Research = [
 export default function ResearchSelect() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <>
+<>
       <div className="max-w-7xl mx-auto px-6 py-16 font-sans">
         <div>
           <p className="text-black font-[600] text-[24px]">More from the Research Institute</p>
@@ -50,7 +49,7 @@ export default function ResearchSelect() {
         </div>
       )}
     </div>
-    </>
+  </>
   );
 }
 

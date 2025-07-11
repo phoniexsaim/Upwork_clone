@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import { FaApple, FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
