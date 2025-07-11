@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -70,7 +69,6 @@ export default function ProductReleaseTimeline() {
   return (
     <div className="flex px-0 py-12">
       <div className="w-full font-sans max-w-6xl relative">
-        {/* Vertical line */}
         <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-300 transform -translate-x-1/2"></div>
 
         <AnimatePresence>
@@ -83,7 +81,6 @@ export default function ProductReleaseTimeline() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              {/* Left Side */}
               <div className="w-1/2 flex justify-end pr-6 text-sm text-gray-600">
                 <div className="flex items-center mt-1 gap-2">
                   <span className={`px-2 py-0.5 text-xs rounded-xl ${release.typeColor}`}>
@@ -93,13 +90,11 @@ export default function ProductReleaseTimeline() {
                 </div>
               </div>
 
-              {/* Middle dot and line */}
               <div className="relative flex justify-center">
                 <div className="w-0.5 bg-gray-300"></div>
                 <div className="absolute w-4 h-4 rounded-full bg-white border-2 border-gray-300 top-1.5"></div>
               </div>
 
-              {/* Right Side */}
               <div className="w-1/2 pl-6">
                 <h3 className="text-[30px] text-base/8 font-[600] text-black mb-2">
                   {release.title}
@@ -120,7 +115,6 @@ export default function ProductReleaseTimeline() {
           ))}
         </AnimatePresence>
 
-        {/* Load More Button */}
         {visibleCount < releases.length && (
           <div className="text-end mt-6">
             <button

@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useRef, useEffect } from "react";
 import ReactPlayer from "react-player/youtube";
 import Image from "next/image";
@@ -89,7 +88,6 @@ export default function EnterpriseFeatureVideoSlider() {
       </div>
 
       <div className="relative w-full flex justify-center items-center">
-       {/* Left Arrow with smaller gap */}
 {showLeft && (
   <button
     onClick={() => scrollByCards("left")}
@@ -98,7 +96,6 @@ export default function EnterpriseFeatureVideoSlider() {
     <SlArrowLeft className="text-white hover:text-lime-500 cursor-pointer w-6 h-6" />
   </button>
 )}
-
         <div className="w-[1100px] overflow-hidden">
           <div
             ref={scrollRef}
@@ -153,7 +150,6 @@ export default function EnterpriseFeatureVideoSlider() {
           </div>
         </div>
 
-       {/* Right Arrow with smaller gap */}
 {showRight && (
   <button
     onClick={() => scrollByCards("right")}
@@ -164,7 +160,6 @@ export default function EnterpriseFeatureVideoSlider() {
 )}
       </div>
 
-      {/* Video Modal */}
       {activeVideo && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
           <div className="relative w-[90%] max-w-3xl aspect-video">

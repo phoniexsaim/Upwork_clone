@@ -1,16 +1,13 @@
 "use client";
-
 import FilterSelect from "@/app/Components/FilterSelect";
 import Footer from "@/app/Components/Footer";
 import Navbar from "@/app/Components/Navbar";
 import ProductReleaseTimeline from "@/app/Components/ProductReleaseTimeline";
 
-
-
 export default function WhatsNewReleaseNotes() {
   return (
-    <>
-    <Navbar/>
+<>
+<Navbar/>
 <div className="max-w-screen-2xl font-sans mx-auto px-6 py-16">
         <div className="bg-white mt-8">
           <div className="flex flex-col justify-center items-center">
@@ -26,6 +23,6 @@ export default function WhatsNewReleaseNotes() {
       </div>
       <ProductReleaseTimeline></ProductReleaseTimeline>
       <Footer></Footer>
-    </>
+</>
   );
 }

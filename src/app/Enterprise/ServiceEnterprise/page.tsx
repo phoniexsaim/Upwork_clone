@@ -1,5 +1,4 @@
 "use client";
-
 import { useRef } from "react";
 import EnterpriseHigherTalent from "@/app/Components/Enterprise-HigherTalent";
 import EnterpriseScroll from "@/app/Components/Enterprise-Scroll";
@@ -17,26 +16,22 @@ export default function EnterpriseServices() {
   const triggerRef = useRef(null);
 
   return (
-    <>
-      <Navbar isEnterprise/>
+<>
+    <Navbar isEnterprise/>
       <EnterpriseSmallNav />
       <div className="bg-black pt-[112px]"> 
-
         <EnterpriseServicesBanner />
         <EnterpriseServicesPartial />
-
         <div ref={triggerRef}>
           <EnterpriseHigherTalent />
         </div>
-
         <EnterpriseTrusted />
         <EnterpriseServicesTalent />
         <EnterpriseServicesAdabtable />
         <EnterpriseServicesChecks />
         <Footer />
       </div>
-
-      <EnterpriseScroll triggerRef={triggerRef} />
-    </>
+    <EnterpriseScroll triggerRef={triggerRef} />
+</>
   );
 }

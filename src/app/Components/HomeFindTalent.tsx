@@ -1,20 +1,16 @@
 "use client";
 
 export default function HomeFindTalent() {
-
-
   return (
-    <>
+<>
 <div className="max-w-7xl font-sans mx-auto px-4 sm:px-6 py-10 sm:py-16">
   <section className="relative w-full rounded-lg overflow-hidden">
-    {/* Responsive Image */}
     <img
       src="/Images/find-talent.jpg"
       alt="Find Talent"
       className="w-full min-h-[700px] sm:min-h-[550px] md:h-[600px] object-cover"
     />
 
-    {/* Dark overlay and content */}
     <div className="absolute inset-0 min-h-[700px] sm:min-h-[550px] md:h-[600px] bg-black/40 flex flex-col justify-center text-white">
       <div className="w-full md:mt-2 sm:mt-0 px-4 sm:px-6">
         <h4 className="text-[18px] sm:text-[20px] md:text-[24px] font-[600] mb-4">
@@ -30,9 +26,7 @@ export default function HomeFindTalent() {
           things done—from quick turnarounds to big transformations.
         </p>
 
-        {/* Responsive card grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 w-full">
-          {/* Card 1 */}
           <div className="bg-[#108a00] text-white hover:bg-white hover:text-[#108a00] p-4 sm:p-6 md:p-8 rounded-lg cursor-pointer">
             <h3 className="text-[20px] sm:text-[26px] md:text-[34px] font-[500] mb-2">
               Post a job and hire a pro
@@ -42,7 +36,6 @@ export default function HomeFindTalent() {
             </p>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-[#108a00] text-white hover:bg-white hover:text-[#108a00] p-4 sm:p-6 md:p-8 rounded-lg cursor-pointer">
             <h3 className="text-[20px] sm:text-[26px] md:text-[34px] font-[500] mb-2">
               Browse and buy projects
@@ -52,7 +45,6 @@ export default function HomeFindTalent() {
             </p>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-[#108a00] text-white hover:bg-white hover:text-[#108a00] p-4 sm:p-6 md:p-8 rounded-lg cursor-pointer">
             <h3 className="text-[20px] sm:text-[26px] md:text-[34px] font-[500] mb-2">
               Get advice from an industry expert
@@ -66,10 +58,6 @@ export default function HomeFindTalent() {
     </div>
   </section>
 </div>
-
-
-
-
-    </>
+</>
   );
 }

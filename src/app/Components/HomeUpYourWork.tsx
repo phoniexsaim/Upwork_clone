@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { FaPenToSquare } from "react-icons/fa6";
 import { TbShieldStar } from "react-icons/tb";
@@ -8,7 +7,7 @@ import { TiPinOutline } from "react-icons/ti";
 export default function HomeUpYourWork() {
 
   return (
-    <>
+<>
      <div className="bg-white font-sans text-gray-900">
   <div className="max-w-7xl font-sans mx-auto px-6 py-16">
     <main className="grid md:grid-cols-2 gap-12 items-center">
@@ -58,8 +57,6 @@ export default function HomeUpYourWork() {
     </main>
   </div>
 </div>
-
-
-    </>
+</>
   )
 }

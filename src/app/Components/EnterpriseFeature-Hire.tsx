@@ -1,10 +1,9 @@
 "use client";
-
 import { GoArrowRight } from "react-icons/go";
 
 export default function EnterpriseFeatureBanner() {
   return (
-    <>
+<>
       <div className="w-full max-w-7xl py-16 font-sans mx-auto px-4">
         <div>
           <h1 className="text-[36px] leading-[1.1] md:text-[48px] font-[600]">
@@ -42,6 +41,6 @@ export default function EnterpriseFeatureBanner() {
           ))}
         </div>
       </div>
-    </>
+</>
   );
 }

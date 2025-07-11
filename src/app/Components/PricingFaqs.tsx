@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react';
-import Head from 'next/head';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 export default function FAQPage() {

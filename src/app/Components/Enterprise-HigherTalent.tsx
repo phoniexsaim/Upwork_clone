@@ -1,14 +1,10 @@
 "use client";
-
 import { HiOutlineArrowRight } from "react-icons/hi";
-
-
-
 
 export default function EnterpriseHigherTalent() {
   return (
-    <>
-         <div className="w-full max-w-7xl font-sans mx-auto mb-20 px-4">
+<>
+  <div className="w-full max-w-7xl font-sans mx-auto mb-20 px-4">
   <div className="mb-10 text-center lg:text-left">
     <h1 className="text-[32px] sm:text-[36px] lg:text-[48px]  max-md:leading-[1.1] font-[600] leading-snug">
       Hire talent on Upwork for your next AI Project
@@ -19,7 +15,6 @@ export default function EnterpriseHigherTalent() {
   </div>
 
   <div className="w-full flex flex-col lg:flex-row justify-center gap-6">
-    {/* Left Content */}
     <div className="w-full lg:w-[55%]">
       <div>
         <h2 className="text-[22px] sm:text-[24px] lg:text-[28px] font-semibold">
@@ -62,7 +57,6 @@ export default function EnterpriseHigherTalent() {
       </div>
     </div>
 
-    {/* Right Image */}
     <div className="w-full lg:w-[45%] mt-6 lg:mt-0">
       <img
         src="/Images/PICTURE2.png"
@@ -72,7 +66,6 @@ export default function EnterpriseHigherTalent() {
     </div>
   </div>
 </div>
-
-    </>
+</>
   )
 }

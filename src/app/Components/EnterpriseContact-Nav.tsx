@@ -1,11 +1,10 @@
 "use client";
-
 import Link from "next/link";
 
 export default function EnterpriseContactNav() {
     return(
-        <>
-       <div className="font-sans text-white flex justify-between items-center text-[14px] sm:text-[16px] py-6 px-4 sm:px-10">
+<>
+<div className="font-sans text-white flex justify-between items-center text-[14px] sm:text-[16px] py-6 px-4 sm:px-10">
  <Link href="/home">
   <div className="w-[120px] sm:w-auto">  
     <img
@@ -24,7 +23,6 @@ export default function EnterpriseContactNav() {
     </label>
   </div>
 </div>
-
-        </>
+</>
     )
 }

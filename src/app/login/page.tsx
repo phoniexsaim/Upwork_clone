@@ -1,13 +1,12 @@
 
 "use client"
 import Link from 'next/link';
-import { FaApple, FaUser } from 'react-icons/fa';
+import { FaApple } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import Head from 'next/head';
 import { LuUserRound } from 'react-icons/lu';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-
 
 export default function Login() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -23,7 +22,7 @@ export default function Login() {
 
 
   return (
-    <>
+<>
       <Head>
         <style>
           {`
@@ -105,6 +104,6 @@ export default function Login() {
             </p>
             </div>
       </div>
-    </>
+</>
   );
 }

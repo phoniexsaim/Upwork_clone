@@ -1,5 +1,4 @@
 "use client";
-
 import EnterpriseDedicated from "@/app/Components/Enterprise-Dedicated";
 import EnterpriseForSmallTalent from "@/app/Components/Enterprise-ForSmallProjects";
 import EnterpriseGovernance from "@/app/Components/Enterprise-Governance";
@@ -16,12 +15,12 @@ import EnterpriseVideo from "@/app/Components/Enterprise-Video";
 import Footer from "@/app/Components/Footer";
 import Navbar from "@/app/Components/Navbar";
 import { useRef } from "react";
+
 export default function Enterprise() {
   const triggerRef = useRef(null);
-
   return (
-    <>
-       <Navbar isEnterprise/>
+<>
+    <Navbar isEnterprise/>
       <div className="bg-black">
         <EnterpriseSmallNav/>
         <div className="pt-[60px]">
@@ -41,8 +40,7 @@ export default function Enterprise() {
           <Footer />
         </div>
       </div>
-
-      <EnterpriseScroll triggerRef={triggerRef} />
-    </>
+    <EnterpriseScroll triggerRef={triggerRef} />
+</>
   );
 }

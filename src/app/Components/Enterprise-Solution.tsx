@@ -1,26 +1,22 @@
 "use client";
 
-
 export default function EnterpriseSolution() {
   return (
-    <>
-     <div className="w-full max-w-7xl font-sans mx-auto mb-14 px-4">
+<>
+<div className="w-full max-w-7xl font-sans mx-auto mb-14 px-4">
   <div className="mb-8 mt-3">
     <h1 className="text-[48px] font-[500] max-md:text-[30px] max-md:font-[600] max-md:leading-[1.1] max-md:text-left">
       Enterprise solutions to scale a winning talent strategy
     </h1>
   </div>
 
-  {/* Image shown right after heading on mobile */}
   <div className="hidden max-md:block w-full mb-8">
     <div className="aspect-[1.6115] rounded-[24px] overflow-hidden max-md:aspect-auto max-md:h-[300px]">
       <img src="/Images/IMAGE.jpg" alt="image" className="w-full h-full object-cover rounded-[24px]" />
     </div>
   </div>
 
-  {/* Content + image side by side on desktop, text below image on mobile */}
   <div className="w-full flex gap-4 max-md:flex-col max-md:gap-10 max-md:flex-col-reverse">
-    {/* Text Column */}
     <div className="w-[40%] mt-16 max-w-[430px] max-md:w-full max-md:mt-0">
       <div>
         <h2 className="text-[28px] mb-4 leading-7.5 max-md:text-[20px] max-md:leading-[1.4] max-md:text-left">
@@ -50,14 +46,11 @@ export default function EnterpriseSolution() {
       </div>
     </div>
 
-    {/* Image for desktop only */}
     <div className="w-[60%] aspect-[1.6115] rounded-[24px] relative overflow-hidden max-md:hidden">
       <img src="/Images/IMAGE.jpg" alt="image" className="w-full h-full object-cover rounded-[24px]" />
     </div>
   </div>
 </div>
-
-
-    </>
+</>
   )
 }

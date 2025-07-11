@@ -1,12 +1,10 @@
 "use client";
-
 import { HiOutlineArrowRight } from "react-icons/hi";
-
 
 export default function EnterpriseFeatureWhyEnterprise() {
   return (
-    <>
-      <div className="w-full max-w-7xl py-16 font-sans mx-auto px-4">
+<>
+<div className="w-full max-w-7xl py-16 font-sans mx-auto px-4">
         <div>
             <h1 className="md:text-[48px] text-[36px] leading-[1.2] font-[600] mb-8">Why enterprises turn to Upwork</h1>
         </div>
@@ -51,6 +49,6 @@ export default function EnterpriseFeatureWhyEnterprise() {
                         </button>
                       </div>
       </div>
-    </>
+</>
   );
 }

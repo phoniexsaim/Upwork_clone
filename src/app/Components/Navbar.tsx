@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { CiSearch } from 'react-icons/ci';
@@ -7,7 +6,6 @@ import { FiChevronDown, FiUsers, FiBriefcase, FiFileText, FiX, FiChevronLeft } f
 import { MdKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from 'react-icons/md';
 import { HiOutlineArrowRight } from 'react-icons/hi';
 import { FaBars, FaSearch, FaTimes } from 'react-icons/fa';
-
 import { usePathname } from 'next/navigation';
 
 type NavbarProps = {
@@ -104,7 +102,7 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
 
 
   return (
-    <>
+<>
  <nav
       className={`fixed w-full z-[100] transition-all duration-300 ${
     useEnterpriseTheme ? 'bg-black text-white' : 'bg-white text-black'
@@ -131,9 +129,7 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
         </Link>
            
 
-            {/* Desktop Menu */}
             <div className="hidden md:flex ml-10 space-x-6">
-              {/* Find Talent */}
               <div 
           className="relative"
           onMouseEnter={() => {
@@ -334,7 +330,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
               )}
             </div>
 
-              {/* Find Work */}
               <div 
                 onMouseEnter={() => handleMainMenuHover('work')}
                 onMouseLeave={() => setActiveMainMenu(null)}
@@ -385,7 +380,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
                 )}
               </div>
 
-              {/* Why Upwork */}
               <div 
                 className="relative group"
                 onMouseEnter={() => handleMainMenuHover('why')}
@@ -468,7 +462,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
                 )}
               </div>
 
-              {/* What's New */}
               {!isEnterpriseClicked && (
                <div 
                className="relative group"
@@ -524,7 +517,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
                 </div>
               )}
 
-              {/* Enterprise */}
               <Link
                 href="/Enterprise/MainEnterprise"
                 className="font-medium text-sm  hover:text-green-600"
@@ -533,7 +525,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
                 Enterprise
               </Link>
 
-              {/* Pricing */}
               {!isEnterpriseClicked && (
                 <Link href="/pricing" className="font-medium text-sm  hover:text-green-600">
                   Pricing
@@ -542,7 +533,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
             </div>
             </div>
 
-              {/* Search Bar */}
             <div className="flex items-center space-x-4">
               <div className='hidden md:flex ml-[5rem] rounded-[8px] border flex-row justify-center items-center border-gray-500 px-[8px] py-[3px]'>
                 <CiSearch className=' text-[22px]' />
@@ -600,7 +590,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
               )}
              </div>
 
-              {/* Auth Buttons */}
               <div className="flex items-center space-x-4 ">
                 <Link href="/login" className="text-sm font-medium  hover:text-green-600 hidden md:flex">
                   Log In
@@ -625,7 +614,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
   }`}
   >     {!searchOpen && (
         <div className="flex items-center justify-between px-4 bg-white border-b border-b-[#d9d9d9]">
-          {/* Left - Menu & Logo */}
           <div className="flex items-center">
             <button
               className="text-gray-800 focus:outline-none"
@@ -642,7 +630,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
             </Link>
           </div>
 
-          {/* Right - Search & Sign Up */}
           <div className="flex items-center space-x-4">
             <button 
               className="text-gray-800 focus:outline-none"
@@ -651,7 +638,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
               <FaSearch size={20} />
             </button>
 
-            {/* Hide Sign Up button when menu is open */}
             {!mobileMenuOpen && (
             <Link 
             href="/signup" 
@@ -664,10 +650,8 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
         </div>
       )}
 
-        {/* Search Bar (Conditional) */}
         {searchOpen && (
   <div className="fixed inset-0 z-50 bg-white">
-    {/* Back Button + Search */}
     <div className="flex items-center space-x-2 p-4">
       <button 
         className="text-xl text-gray-700"
@@ -720,7 +704,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
 
                   {activeMainMenu === 'talent' && (
                     <div className="left-0 right-0 bg-white z-10 animate-fade overflow-y-auto h-full">
-                      {/* Full-screen view (shown when clicked) */}
                       {showFullscreen && (
                         <div className="fixed inset-0 bg-white z-50">
                           <div className="flex justify-between items-center mb-6">
@@ -741,7 +724,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
                             </button>
                           </div>
                           <div>
-                            {/* Dynamic content based on activeSubMenu */}
                             {activeSubMenu === 'marketplace' && (
                               <div className='flex flex-col md:flex-row'>
                                 <div className="flex-1">
@@ -905,11 +887,9 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
                         </div>
                       )}
 
-                      {/* Original menu (shown when fullscreen is inactive) */}
                       {!showFullscreen && (
                         <div className="mx-auto">
                           <div className="flex flex-col md:flex-row gap-4 md:gap-20">
-                            {/* Left column - main options */}
                             <div className="space-y-4 my-4">
                               {[
                                 {
@@ -1000,7 +980,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
                   <div className="">
                   <div className="flex flex-col">
                 
-                    {/* Box List Section */}
                     <div className="flex flex-col items-start">
                       <div className="px-[16px] py-[20px] hover:bg-[#c3c3c3]">
                         <h4 className="font-normal text-[14px] text-[#181818] mb-[8px]">
@@ -1027,7 +1006,6 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
                       </div>
                     </div>
                 
-                    {/* Guides Section */}
                     <div className="w-full flex flex-col items-start px-[16px]">
                       <h4 className="font-normal text-[#181818] py-[12px] mt-[8px] text-[14px]">Where work gets done</h4>
      
@@ -1125,7 +1103,7 @@ const Navbar = ({ isEnterprise = false }: NavbarProps) => {
           </div>
         )}
       </div>
-    </>
+</>
   );
 };
 

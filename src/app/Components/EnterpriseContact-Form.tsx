@@ -31,12 +31,9 @@ export default function EnterpriseContactForm() {
   }));
 
   return (
-        <div className="max-w-7xl mx-auto px-3 py-4 md:py-6 flex gap-3 md:gap-6 text-[11px] md:text-[14px] flex-wrap">
-
-  {/* Left Side */}
+<div className="max-w-7xl mx-auto px-3 py-4 md:py-6 flex gap-3 md:gap-6 text-[11px] md:text-[14px] flex-wrap">
   <div className="w-full md:w-[40%] flex flex-col justify-between h-full">
 
-    {/* Top Content */}
     <div>
       <h1 className="text-[32px] md:text-[48px] font-[600] leading-tight">Let's connect</h1>
       <p className="text-[20px] md:text-[20px] mt-6 md:mt-12 leading-snug">
@@ -59,7 +56,6 @@ export default function EnterpriseContactForm() {
       </div>
     </div>
 
-    {/* Trusted By */}
     <div className="mt-12 md:mt-88">
       <p className="text-[11px] md:text-[12px] font-bold">TRUSTED BY</p>
       <div className="flex items-center gap-3 md:gap-4 mt-2 flex-wrap">
@@ -72,14 +68,12 @@ export default function EnterpriseContactForm() {
     </div>
   </div>
 
-  {/* Right Side */}
   <div className="w-full md:w-[55%]">
     <div className="bg-black md:bg-[#1c1c1c] rounded-[24px] md:rounded-[32px] px-5 md:px-10 pt-8 md:pt-10 pb-10 md:pb-14">
       <h1 className="text-[20px] md:text-[24px] font-semibold mb-4 md:mb-6">Tell us about yourself</h1>
 
       <form className="space-y-4">
 
-        {/* First / Last Name */}
         <div className="flex flex-col md:flex-row gap-3">
           <input
             type="text"
@@ -95,7 +89,6 @@ export default function EnterpriseContactForm() {
           />
         </div>
 
-        {/* Email */}
         <input
           type="email"
           placeholder="Email"
@@ -103,7 +96,6 @@ export default function EnterpriseContactForm() {
           className={`w-full border border-[#313131] rounded-md px-3 py-2 md:px-4 md:py-3 placeholder-[#a5a5a5] text-sm md:text-base ${getInputStyle(inputValues.email)}`}
         />
 
-        {/* Phone Section */}
         <div className="w-full flex flex-col md:flex-row gap-2 items-start md:items-center border border-[#313131] rounded-md px-3 py-2">
           <div className="w-full md:min-w-[170px]">
             <Select
@@ -170,7 +162,6 @@ export default function EnterpriseContactForm() {
           />
         </div>
 
-        {/* Job Title */}
         <input
           type="text"
           placeholder="Job title"
@@ -178,7 +169,6 @@ export default function EnterpriseContactForm() {
           className={`w-full border border-[#313131] rounded-md px-3 py-2 md:px-4 md:py-3 placeholder-[#a5a5a5] text-sm md:text-base ${getInputStyle(inputValues.job)}`}
         />
 
-        {/* Company Name */}
         <input
           type="text"
           placeholder="Company name"
@@ -186,7 +176,6 @@ export default function EnterpriseContactForm() {
           className={`w-full border border-[#313131] rounded-md px-3 py-2 md:px-4 md:py-3 placeholder-[#a5a5a5] text-sm md:text-base ${getInputStyle(inputValues.company)}`}
         />
 
-        {/* Company Size Dropdown */}
         <div className="relative w-full">
           <select
             className="w-full bg-transparent border border-[#313131] rounded-md px-3 py-2 md:px-4 md:py-3 text-[#a5a5a5] pr-10 text-sm md:text-base appearance-none"
@@ -220,7 +209,6 @@ export default function EnterpriseContactForm() {
           </div>
         </div>
 
-        {/* Submit Button */}
         <button
           type="submit"
           className="bg-[#95df05] text-black px-8 md:px-12 py-2.5 md:py-3 rounded-xl font-[400] mt-4 text-sm md:text-base"
@@ -228,7 +216,6 @@ export default function EnterpriseContactForm() {
           Submit
         </button>
 
-        {/* Footer */}
         <p className="text-[12px] md:text-[14px] text-white mt-4 md:mt-6 leading-snug">
           We’ll use your personal information to contact you, schedule a call, and communicate about Enterprise Suite and Upwork services. The use of your information is governed by Upwork's{" "}
           <a href="#" className="text-[#95df05] underline hover:text-[#108a00] transition-all">Privacy Policy</a>.

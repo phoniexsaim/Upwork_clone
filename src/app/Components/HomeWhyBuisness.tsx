@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import { FaAward, FaStar } from "react-icons/fa";
@@ -9,7 +8,7 @@ import { PiShieldStar } from "react-icons/pi";
 
 export default function HomeWhyBuisness() {
     return(
-        <>
+<>
      <section className="bg-white py-16">
   <div className="max-w-7xl font-sans mx-auto md:px-6 sm:px-0 relative flex flex-col lg:flex-row gap-6">
     
@@ -85,7 +84,6 @@ export default function HomeWhyBuisness() {
 </div>
 
 
-    {/* Larger Overlapping Image */}
     <div className="absolute md:left-[66%] left-[78%] md:top-1/2 top-[27%] transform -translate-x-1/2 -translate-y-1/2 md:scale-[0.75] scale-[1.7] z-20 pointer-events-none">
       <Image
         src="/person-with-headset.webp"
@@ -97,8 +95,6 @@ export default function HomeWhyBuisness() {
     </div>
   </div>
 </section>
-
-
-        </>
+</>
     );
 }

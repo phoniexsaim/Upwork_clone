@@ -1,13 +1,11 @@
 "use client";
-
 import { useEffect, useState } from "react";
-import { X } from "lucide-react"; // npm install lucide-react or use emoji
+import { X } from "lucide-react";
 
 export default function ScrollPopup({ triggerRef }) {
   const [isVisible, setIsVisible] = useState(false);
   const [isClosed, setIsClosed] = useState(false);
 
-  // Check if already closed in this session
   useEffect(() => {
     const closed = sessionStorage.getItem("enterprisePopupClosed");
     if (closed === "true") {
@@ -15,7 +13,6 @@ export default function ScrollPopup({ triggerRef }) {
     }
   }, []);
 
-  // Watch scroll position
   useEffect(() => {
     const handleScroll = () => {
       if (triggerRef.current && !isClosed) {
@@ -27,14 +24,13 @@ export default function ScrollPopup({ triggerRef }) {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check immediately on mount
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [triggerRef, isClosed]);
 
-  // Close handler
   const handleClose = () => {
     setIsClosed(true);
     sessionStorage.setItem("enterprisePopupClosed", "true");

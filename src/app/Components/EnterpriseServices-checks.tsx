@@ -1,12 +1,10 @@
 "use client";
-
 import { HiOutlineArrowRight } from "react-icons/hi";
 
 export default function EnterpriseServicesChecks() {
     return(
-        <>
-        <div className="w-full max-w-7xl font-sans p-10 rounded-4xl mx-auto mb-14 bg-[#1c1c1c]">
-  {/* Headings */}
+<>
+<div className="w-full max-w-7xl font-sans p-10 rounded-4xl mx-auto mb-14 bg-[#1c1c1c]">
   <div>
     <h1 className="text-[30px] leading-[32px] font-[500] text-left md:text-[48px] md:leading-[1.2]">
       Operate efficiently and free up bandwidth with our professional services
@@ -16,9 +14,7 @@ export default function EnterpriseServicesChecks() {
     </h2>
   </div>
 
-  {/* Task list */}
   <div className="mt-12 max-w-4xl flex flex-col md:flex-row md:justify-between gap-6">
-    {/* Column 1 */}
     <div className="space-y-4">
       <div className="flex gap-5">
         <img src="/Images/Correct.svg" className="object-contain h-[24px] w-[24px]" />
@@ -41,7 +37,6 @@ export default function EnterpriseServicesChecks() {
       </div>
     </div>
 
-    {/* Column 2 */}
     <div className="space-y-4">
       <div className="flex gap-5">
         <img src="/Images/Correct.svg" className="object-contain h-[24px] w-[24px]" />
@@ -65,7 +60,6 @@ export default function EnterpriseServicesChecks() {
     </div>
   </div>
 
-  {/* CTA Button */}
   <div className="mt-14">
     <button className="group text-[18px] text-black w-full py-[12px] max-w-[400px] px-[46px] rounded-xl hover:bg-[#7ab503] cursor-pointer bg-[#95df00] overflow-hidden">
       <span className="inline-flex items-center transition-transform duration-300 group-hover:-translate-x-1">
@@ -77,7 +71,6 @@ export default function EnterpriseServicesChecks() {
     </button>
   </div>
 </div>
-
-        </>
+</>
     );
 }

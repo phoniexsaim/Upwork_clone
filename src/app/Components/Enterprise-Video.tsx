@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 
 export default function EnterpriseVideo() {
@@ -9,14 +8,12 @@ export default function EnterpriseVideo() {
     <div className="w-full max-w-7xl py-16 font-sans mx-auto mb-14 px-4">
       <div className="w-full flex flex-col-reverse lg:flex-row justify-center gap-10">
         
-        {/* LEFT TEXT SECTION */}
         <div className="w-full lg:w-[35%] mt-8 lg:mt-2 flex flex-col gap-6">
           <h1 className="text-[32px] md:text-[40px] lg:text-[48px] font-[600] text-left">
             How it works
           </h1>
 
           <div className="space-y-6">
-            {/* Step 1 */}
             <div className="flex items-start gap-4">
               <span className="text-[32px] md:text-[40px] lg:text-[48px] font-[600] leading-[1]">1.</span>
               <p className="text-[16px] md:text-[18px] lg:text-[20px]">
@@ -24,7 +21,6 @@ export default function EnterpriseVideo() {
               </p>
             </div>
 
-            {/* Step 2 */}
             <div className="flex items-start gap-4">
               <span className="text-[32px] md:text-[40px] lg:text-[48px] font-[600] leading-[1]">2.</span>
               <p className="text-[16px] md:text-[18px] lg:text-[20px]">
@@ -32,7 +28,6 @@ export default function EnterpriseVideo() {
               </p>
             </div>
 
-            {/* Step 3 */}
             <div className="flex items-start gap-4">
               <span className="text-[32px] md:text-[40px] lg:text-[48px] font-[600] leading-[1]">3.</span>
               <p className="text-[16px] md:text-[18px] lg:text-[20px]">
@@ -42,7 +37,6 @@ export default function EnterpriseVideo() {
           </div>
         </div>
 
-        {/* VIDEO SECTION */}
         <div className="w-full lg:w-[65%]">
           <div className="relative aspect-video rounded-2xl overflow-hidden bg-black">
             {!isPlaying ? (

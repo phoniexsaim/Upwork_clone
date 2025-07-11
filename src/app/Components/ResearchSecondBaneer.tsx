@@ -1,6 +1,5 @@
 "use client";
 
-
 export default function ResearchSecondBanner() {
   return (
     <>
@@ -27,7 +26,6 @@ export default function ResearchSecondBanner() {
     </div>
   </div>
 </div>
-
     </>
   );
 }

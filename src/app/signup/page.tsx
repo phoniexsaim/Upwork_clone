@@ -37,8 +37,8 @@ export default function SignupPage() {
     };
     
   return (
-    <>
-        <div
+<>
+     <div
             className={`w-full p-[16px] fixed bg-white z-10 transition-all ${
               isScrolled ? 'border-b border-b-[#d9d9d9]' : ''
             }`}
@@ -107,6 +107,6 @@ export default function SignupPage() {
         </a>
       </p>
     </div>
-    </>
+</>
   );
 }

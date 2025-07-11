@@ -1,6 +1,4 @@
 "use client";
-
-
 import clsx from 'clsx';
 import { useState } from 'react';
 
@@ -110,7 +108,7 @@ export default function BlogTopMenu() {
 
   const handleTabClick = (tabValue: string) => {
     setActiveTab(tabValue);
-    setCurrentPage(1); // Reset page when tab changes
+    setCurrentPage(1);
   };
 
   const tabData = dummyData[activeTab];
