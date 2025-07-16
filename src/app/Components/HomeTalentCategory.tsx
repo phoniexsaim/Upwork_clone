@@ -1,4 +1,5 @@
  "use client";
+import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 
 export default function HomeTalentCategory() {
@@ -19,10 +20,10 @@ export default function HomeTalentCategory() {
         Browse talent by category
       </h2>
       <p className="text-[20px] text-[#676767] mb-8">
-        Looking for work?{" "}
-        <a href="#" className="text-[#108a00] underline font-medium">
+        Looking for work?
+        <Link href="#" className="text-[#108a00] underline font-medium">
           Browse jobs
-        </a>
+        </Link>
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

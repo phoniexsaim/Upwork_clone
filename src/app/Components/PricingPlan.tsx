@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link'
 import React from 'react'
 import { LuDot } from 'react-icons/lu'
 import { MdOutlineErrorOutline } from 'react-icons/md'
@@ -9,7 +10,7 @@ const Pricing = () => {
         <h1 className='text-[rgb(24,24,24)] text-[40px] tracking-[.025rem] leading-[1.1em] font-[500] font-Neuemontreal Variable,sans-serif mb-[2.5rem]'>Pricing plans for every business</h1>
         <div className='mb-[1rem] flex items-center'>
             <p className='tracking-[.02625rem] text-[#676767] text-[14px] leading-[21px] font-[530] mr-[4px]'>Job seeker?</p>
-            <a href="#" className='text-[#14a800] text-[14px] tracking-[.02625rem] leading-[21px] font-[530] underline'>Join as a Youtuber</a>
+            <Link href="#" className='text-[#14a800] text-[14px] tracking-[.02625rem] leading-[21px] font-[530] underline'>Join as a Youtuber</Link>
         </div>
         <div className='flex gap-[20px] flex-col md:flex-row '>
                 <div className='flex flex-col border border-[#d9d9d9] rounded-[24px] p-[2rem] w-full gap-[1.5rem]'>
@@ -19,11 +20,11 @@ const Pricing = () => {
                         <span className='text-[16px] text-[#181818] leading-[1.5em] tracking-[.03em] font-[530]'>5% Service fee</span>
                     </div>
                     <div className='flex flex-col'>
-                         <a href='#'
+                         <Link href="#"
                                 className='w-[180px] cursor-pointer text-[16px] text-center leading-[24px] font-[500] 
                                 rounded-[12px] py-[.5rem] px-[1.2rem] bg-[#0c7100] hover:bg-[#14a800] transition-[.2s]'>
                                 Sign up for free
-                         </a>
+                         </Link>
 
                          <div className='mt-[2rem] w-full bg-[#d9d9d9] h-[1px] mb-[2rem]'></div>
                          <div className='flex-col flex z-[2] items-start'>
@@ -65,11 +66,11 @@ const Pricing = () => {
                     </div>
                     <div className='flex flex-col'>
                         
-                            <a href='#'
+                            <Link href="#"
                             className='w-[180px] cursor-pointer text-[16px] text-center leading-[24px] font-[500] 
                             rounded-[12px] py-[.5rem] px-[1.2rem] bg-[#0c7100] hover:bg-[#14a800] transition-[.2s]'>
                             Sign up for free
-                            </a>
+                            </Link>
 
                          <div className='mt-[2rem] w-full bg-[#d9d9d9] h-[1px] mb-[2rem]'></div>
                          <div className='flex-col flex z-[2] items-start'>

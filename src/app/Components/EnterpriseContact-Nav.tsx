@@ -16,7 +16,7 @@ export default function EnterpriseContactNav() {
   </Link>
   <div className="text-right">
     <label>
-      Job seeker?{" "}
+      Job seeker?
       <span className="text-[#95df02] underline hover:text-[#14a800] transition-all cursor-pointer">
         <Link href="/signup/youtubersignup">Join as a youtuber</Link>
       </span>

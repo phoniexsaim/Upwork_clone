@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { MdOutlineErrorOutline } from 'react-icons/md';
 
@@ -81,7 +82,7 @@ export default function ComparePlans() {
         <h3 className="font-normal text-[20px] mb-[8px] text-[#181818]">Enterprise</h3>
         <p className="text-[14px] text-[#181818] mb-6">Custom pricing</p>
         <button className="w-[150px] bg-[#0c7100] hover:bg-[#14a800] text-white py-2 rounded-[12px] transition-colors">
-        <a href='/PricingContact'> Contact Sales</a>
+        <Link href="/PricingContact">Contact Sales</Link>
         </button>
       </div>
     </div>

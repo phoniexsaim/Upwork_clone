@@ -11,13 +11,13 @@ export default function EnterpriseContactFooter() {
 
   <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
     <p className="hover:text-[#14a800] transition-all cursor-pointer">
-      <Link href="/">Privacy Policy</Link>
+      <Link href="#">Privacy Policy</Link>
     </p>
     <p className="hover:text-[#14a800] transition-all cursor-pointer">
-      <Link href="/">Terms of Service</Link>
+      <Link href="#">Terms of Service</Link>
     </p>
     <p className="hover:text-[#14a800] transition-all cursor-pointer">
-      <Link href="/">Cookie Settings</Link>
+      <Link href="#">Cookie Settings</Link>
     </p>
   </div>
 </div>

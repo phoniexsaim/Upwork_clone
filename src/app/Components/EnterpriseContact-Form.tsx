@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Select from "react-select";
 import countryData from "country-telephone-data";
+import Link from "next/link";
 
 export default function EnterpriseContactForm() {
   const [selectedCountry, setSelectedCountry] = useState(
@@ -218,11 +219,11 @@ export default function EnterpriseContactForm() {
 
         <p className="text-[12px] md:text-[14px] text-white mt-4 md:mt-6 leading-snug">
           We’ll use your personal information to contact you, schedule a call, and communicate about Enterprise Suite and Upwork services. The use of your information is governed by Upwork's{" "}
-          <a href="#" className="text-[#95df05] underline hover:text-[#108a00] transition-all">Privacy Policy</a>.
+          <Link href="#" className="text-[#95df05] underline hover:text-[#108a00] transition-all">Privacy Policy</Link>
         </p>
         <p className="text-[12px] md:text-[14px] text-white mt-2 leading-snug">
-          For technical issues and general inquiries, please contact{" "}
-          <a href="#" className="text-[#95df05] underline hover:text-[#108a00] transition-all">Upwork support</a>.
+          For technical issues and general inquiries, please contact
+         <Link href="#" className="text-[#95df05] underline hover:text-[#108a00] transition-all">Upwork support</Link>
         </p>
       </form>
     </div>

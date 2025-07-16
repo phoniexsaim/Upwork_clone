@@ -11,8 +11,6 @@ const tabs = [
   { label: 'Research & Reports', value: 'Research & Reports' },
 ];
 
-
-
 const dummyData = {
   'All': [
     {title:'SAIM', img: '/Images/Ex1.webp', desc: 'Upwork Study Finds 1 in 4 U.S. Skilled Knowledge Workers Now Work Independently...', date: 'June 1, 2025' },
@@ -99,7 +97,6 @@ const dummyData = {
     {title:'SAIM', img: '/Images/Num2.jpg', desc: 'Upwork Announces Organizational Changes for Growth...', date: 'May 3, 2025' },
   ],
 };
-
 
 export default function BlogTopMenu() {
  const [activeTab, setActiveTab] = useState('CompanyNews');

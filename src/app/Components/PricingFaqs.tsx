@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import { useState } from 'react';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
@@ -129,10 +130,10 @@ export default function FAQPage() {
           </div>
 
           <div className="text-sm text-[#001e00] mt-6 text-center">
-            Still have questions?{' '}
-            <a href="#" className="text-[#14a800] font-medium underline">
+            Still have questions?
+            <Link href="#" className="text-[#14a800] font-medium underline">
               Visit our Help Center
-            </a>
+            </Link>
           </div>
         </div>
       </div>

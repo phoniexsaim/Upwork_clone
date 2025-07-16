@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaApple, FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoAndroid } from "react-icons/io";
@@ -9,56 +10,56 @@ export default function Footer() {
           <div>
             <h4 className="text-sm text-[#A5A5A5] mb-4">For Youtubers</h4>
             <ul className="space-y-1 text-sm">
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">How to hire</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Talent Marketplace</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Project Catalog</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Hire an agency</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Enterprise</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Business Plus</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Any Hire</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Contract-to-hire</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Direct Contracts</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Hire worldwide</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Hire in the USA</a></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">How to hire</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Talent Marketplace</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Project Catalog</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Hire an agency</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Enterprise</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Business Plus</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Any Hire</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Contract-to-hire</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Direct Contracts</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Hire worldwide</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Hire in the USA</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-sm text-[#A5A5A5] mb-4">For Talent</h4>
             <ul className="space-y-1 text-sm">
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">How to find work</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Direct Contracts</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Find business worldwide</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Find business in the USA</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Win work with ads</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Exclusive resources with business Plus</a></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">How to find work</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Direct Contracts</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Find business worldwide</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Find business in the USA</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Win work with ads</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Exclusive resources with business Plus</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-sm text-[#A5A5A5] mb-4">Resources</h4>
             <ul className="space-y-1 text-sm">
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Help & support</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Success stories</a></li>
-              <li className="hover:underline mb-2 text-[14px]"><a href="#">Upwork reviews</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Resources</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Blog</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Affiliate programme</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Free Business Tools</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Release notes</a></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Help & support</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Success stories</Link></li>
+              <li className="hover:underline mb-2 text-[14px]"><Link href="#">Upwork reviews</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Resources</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Blog</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Affiliate programme</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Free Business Tools</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Release notes</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-sm text-[#A5A5A5] mb-4">Company</h4>
             <ul className="space-y-1 text-sm ">
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">About us</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Leadership</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Investor relations</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Careers</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Our impact</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Press</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Contact us</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Partners</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Trust, safety & security</a></li>
-              <li className="hover:underline mb-3 text-[14px]"><a href="#">Modern slavery statement</a></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">About us</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Leadership</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Investor relations</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Careers</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Our impact</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Press</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="/Enterprise/ContactEnterprise">Contact us</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Partners</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Trust, safety & security</Link></li>
+              <li className="hover:underline mb-3 text-[14px]"><Link href="#">Modern slavery statement</Link></li>
             </ul>
           </div>
         </div>
@@ -83,11 +84,11 @@ export default function Footer() {
         <div className="mt-6 border-t border-[#333] pt-5 flex flex-col md:flex-row items-center text-sm text-[#A5A5A5]">
           <p className="mb-3 md:mb-0">© 2015 - 2025 Upwork® Global Inc.</p>
           <div className="flex flex-wrap justify-center md:justify-end gap-4 text-white ml-[30px]">
-            <a href="#" className="hover:underline">Terms of Service</a>
-            <a href="#" className="hover:underline">Privacy Policy</a>
-            <a href="#" className="hover:underline">CA Notice at Collection</a>
-            <a href="#" className="hover:underline">Cookie Settings</a>
-            <a href="#" className="hover:underline">Accessibility</a>
+            <Link href="#" className="hover:underline">Terms of Service</Link>
+            <Link href="#" className="hover:underline">Privacy Policy</Link>
+            <Link href="#" className="hover:underline">CA Notice at Collection</Link>
+            <Link href="#" className="hover:underline">Cookie Settings</Link>
+            <Link href="#" className="hover:underline">Accessibility</Link>
           </div>
         </div>
       </footer>
