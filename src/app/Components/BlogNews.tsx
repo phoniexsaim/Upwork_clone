@@ -1,5 +1,6 @@
 "use client";
 import clsx from 'clsx';
+import Link from 'next/link';
 import { useState } from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
@@ -62,12 +63,11 @@ export default function BlogNews() {
   <h3 className="text-[16px] font-[500] mb-2 text-[#6e7f69]">{item.title}</h3>
   <p className="text-[22px] font-[500] text-base/7 text-black mb-3">{item.desc}</p>
   <div className="mt-auto">
-    <a href="#" className="text-[16px] flex items-center text-[#1f57c3] underline">
+    <Link href="#" className="text-[16px] flex items-center text-[#1f57c3] underline">
       Read News <FaArrowRightLong className="ml-1" />
-    </a>
+    </Link>
   </div>
 </div>
-
         ))}
       </div>
     </div>

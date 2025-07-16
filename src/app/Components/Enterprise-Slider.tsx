@@ -77,7 +77,6 @@ export default function EnterpriseSlider() {
   slidesPerView={1}
   className="rounded-2xl w-full"
 >
-
               {testimonials.map((item, idx) => (
                 <SwiperSlide key={idx}>
                   {item.type === "testimonial" ? (
@@ -134,7 +133,6 @@ export default function EnterpriseSlider() {
                 </SwiperSlide>
               ))}
             </Swiper>
-
             <div className="custom-pagination mt-8 flex justify-center gap-2 w-full" />
           </div>
         </div>

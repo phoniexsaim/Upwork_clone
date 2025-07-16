@@ -52,5 +52,5 @@ export default function EnterpriseSolution() {
   </div>
 </div>
 </>
-  )
+)
 }
